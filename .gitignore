@@ -7,3 +7,6 @@ build/
 
 __pycache__/
 *.pyc
+
+weather_data_raw.json
+pandas_loader.ipynb
