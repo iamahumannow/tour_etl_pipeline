@@ -41,3 +41,4 @@ if location:
     weather_data = extract_weather_data(location)
     if weather_data:
         print(weather_data)
+
