@@ -1,0 +1,86 @@
+import requests
+import pandas as pd
+from geopy.geocoders import Nominatim
+import json
+
+def get_location(val):
+    locator = Nominatim(user_agent="mygeocoder")
+    location = locator.geocode(val)
+
+    if location:
+        location = {"name": location.address, "latitude": location.latitude, "longitude": location.longitude}
+    else:    
+        print("Location not found")
+    return location
+
+
+def extract_weather_data(location):
+    url = "https://archive-api.open-meteo.com/v1/archive"
+    params = {
+        "latitude": location["latitude"],
+        "longitude": location["longitude"],
+        'start_date': '2025-01-01',
+        'end_date': '2025-12-31',
+        "daily" : "temperature_2m_mean,temperature_2m_max,temperature_2m_min,precipitation_hours,sunshine_duration",
+        'timezone': "auto",
+    }
+    try:
+        response = requests.get(url, params=params)
+        response.raise_for_status()
+        data = response.json()
+        return data
+    except requests.exceptions.RequestException as e:
+        print(f"Error while fetching: {e}")
+        return None
+    
+def data_dump(raw_data):
+    with open('historical_weather_data_raw.json', 'w') as f:
+        json.dump(raw_data, f, indent=4)
+
+def raw_data_cleaner(raw_data):
+    try:
+        latitude = raw_data['latitude']
+        longitude = raw_data['longitude']
+        # months = (pd.to_datetime(raw_data['daily']['time'])).month_name()
+        # monthwise_temp2m_mean = raw_data['daily']['temperature_2m_mean']
+        daily_time = pd.to_datetime(raw_data['daily']['time'])
+        daily_temp2m_mean = raw_data['daily']['temperature_2m_mean']
+        daily_temp2m_max = raw_data['daily']['temperature_2m_max']
+        daily_temp2m_min = raw_data['daily']['temperature_2m_min']
+        daily_precipitation_hours = raw_data['daily']['precipitation_hours']
+        daily_sunshine_duration = raw_data['daily']['sunshine_duration']        
+        
+        df = pd.DataFrame({
+            'latitude': latitude,
+            'longitude': longitude,
+            'date': daily_time,
+            'temperature_2m': daily_temp2m_mean,
+            'temperature_2m_max': daily_temp2m_max,
+            'temperature_2m_min': daily_temp2m_min,
+            'precipitation': daily_precipitation_hours,
+            'sunshine_duration': daily_sunshine_duration
+        })
+
+        df = df.set_index('date').resample('ME').mean().reset_index()
+
+        df['date']=df['date'].dt.month_name()
+        df = df.round(2)
+        df['sunshine_duration'] = df['sunshine_duration']/3600
+        return df
+
+    except KeyError as e:
+        print(f"API structure changed, Missing key: {e}")
+        return None
+
+# x=input("Enter the location: ")
+
+# location = get_location(x)
+# raw_data = extract_weather_data(location)
+# data_dump(raw_data)
+
+with open('historical_weather_data_raw.json', 'r') as f:
+    raw_data = json.load(f)
+
+df = raw_data_cleaner(raw_data)
+print(df.head())
+
