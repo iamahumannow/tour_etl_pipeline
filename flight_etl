@@ -2,6 +2,7 @@ import serpapi
 from dotenv import load_dotenv
 import os
 import json
+import pandas as pd
 
 def get_flight_data(dept_id, arr_id, outbound_date, return_date, adults):
     load_dotenv()
@@ -34,12 +35,53 @@ def data_dump(raw_data):
     with open('flight_data_raw.json', 'w') as f:
         json.dump(raw_data, f, indent=4)
 
+
+def raw_data_cleaner(raw_data):
+    x=0
+    df = pd.DataFrame(columns = ['airline', 'airplane', 'departure_date', 'departure_time', 'arrival_date', 'arrival_time', 'duration', 'leg_room', 'price'])
+    for flight in raw_data:
+        if x>2: break
+        x+=1
+        try:
+            airline = flight['flights'][0]['airline']
+            airplane = flight['flights'][0]['airplane']
+            departure_time = flight['flights'][0]['departure_airport']['time']
+            arrival_time = flight['flights'][0]['arrival_airport']['time']
+            duration = flight['total_duration']
+            leg_room = flight['flights'][0]['legroom']
+            price = flight['price']
+        
+            df2 = pd.DataFrame({
+                'airline': airline,
+                'airplane': airplane,
+                'departure_date': departure_time.split(' ')[0],
+                'departure_time': departure_time.split(' ')[1],
+                'arrival_date': arrival_time.split(' ')[0],
+                'arrival_time': arrival_time.split(' ')[1],
+                'duration': duration,
+                'leg_room': leg_room,
+                'price': price
+            }, index=[0])
+
+            df = pd.concat([df, df2], ignore_index=True)
+
+        except KeyError as e:
+            print(f"Missing key {e} in flight data: {flight}")
+            return df
+    return df
+
 dept_id = 'BOM'
 arr_id = 'IXB'
 outbound_date = '2026-05-28'
 return_date = '2026-06-03'
 adults = 5
 
-flight_data = get_flight_data(dept_id, arr_id, outbound_date, return_date, adults)
-if flight_data:
-    data_dump(flight_data)
+# flight_data = get_flight_data(dept_id, arr_id, outbound_date, return_date, adults)
+# if flight_data:
+#     data_dump(flight_data)
+
+with open('flight_data_raw.json', 'r') as f:
+    raw_data = json.load(f)
+
+df3 = raw_data_cleaner(raw_data)
+print(df3.head())
