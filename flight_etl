@@ -1,0 +1,45 @@
+import serpapi
+from dotenv import load_dotenv
+import os
+import json
+
+def get_flight_data(dept_id, arr_id, outbound_date, return_date, adults):
+    load_dotenv()
+    key = os.getenv("SERPAPI_KEY")
+    try:
+        client = serpapi.Client(api_key=key)
+        results = client.search({
+            'engine': "google_flights",
+            'departure_id': dept_id,
+            'arrival_id': arr_id,
+            'currency': "INR",
+            'outbound_date': outbound_date,
+            'return_date': return_date,
+            'adults': adults,
+            'stops' : 1,
+            'deep_search': True
+            })
+        if 'error' in results:
+            print(f"SerpApi error: {results['error']}")
+            return None
+        return results['best_flights']
+    # except serpapi.SerpApiClientException as e:
+    #     print(f"SerpApi error: {e}")
+    #     return None
+    except Exception as e:
+        print(f"Error fetching flight data: {e}")
+        return None
+    
+def data_dump(raw_data):
+    with open('flight_data_raw.json', 'w') as f:
+        json.dump(raw_data, f, indent=4)
+
+dept_id = 'BOM'
+arr_id = 'IXB'
+outbound_date = '2026-05-28'
+return_date = '2026-06-03'
+adults = 5
+
+flight_data = get_flight_data(dept_id, arr_id, outbound_date, return_date, adults)
+if flight_data:
+    data_dump(flight_data)
