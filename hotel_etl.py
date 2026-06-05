@@ -24,10 +24,6 @@ def get_hotel_data(location, checkin_date, checkout_date, adults=1):
     except Exception as e:
         print(f"Error fetching hotel data: {e}")
         return None
-    
-def data_dump(raw_data):
-    with open('hotel_data_raw.json', 'w') as f:
-        json.dump(raw_data, f, indent=4)
 
 def raw_data_cleaner(raw_data):
     df= pd.DataFrame(columns = ['name', 'stay_type', 'rating', 'price'])
@@ -38,7 +34,6 @@ def raw_data_cleaner(raw_data):
             name = hotel.get('name')
             stay_type= hotel['type']
             rating = hotel.get('location_rating')
-            # price = hotel['total_rate']['extracted_lowest']
             price = hotel.get('total_rate', {}).get('extracted_lowest')
             noPeople=(item for item in hotel['essential_info'] if item.startswith('Sleeps'))
             Beds =(item for item in hotel['essential_info'] if 'beds' in item.lower())
@@ -67,16 +62,24 @@ def raw_data_cleaner(raw_data):
 
 
 
-location = "Sikkim"
-checkin_date = "2026-05-28"
-checkout_date = "2026-06-03"
 
-# raw_data = get_hotel_data(location, checkin_date, checkout_date, adults)
+
+def extract_hotel(location, checkin_date, checkout_date):
+    raw_data = get_hotel_data(location, checkin_date, checkout_date)
+    df= raw_data_cleaner(raw_data)
+    return df
+
+
+
+# location = "Sikkim"
+# checkin_date = "2026-06-28"
+# checkout_date = "2026-07-03"
+
 # data_dump(raw_data)
+# with open('hotel_data_raw.json', 'r') as f:
+#     raw_data = json.load(f)
 
-with open('hotel_data_raw.json', 'r') as f:
-    raw_data = json.load(f)
+# def data_dump(raw_data):
+#     with open('hotel_data_raw.json', 'w') as f:
+#         json.dump(raw_data, f, indent=4)
 
-df3= raw_data_cleaner(raw_data)
-print(df3.head())
-print(len(raw_data))
