@@ -22,21 +22,13 @@ def get_flight_data(dept_id, arr_id, outbound_date, return_date, adults=1):
         if 'error' in results:
             print(f"SerpApi error: {results['error']}")
             return None
-        return results['best_flights']
-    # except serpapi.SerpApiClientException as e:
-    #     print(f"SerpApi error: {e}")
-    #     return None
+        return results['other_flights']
     except Exception as e:
         print(f"Error fetching flight data: {e}")
         return None
-    
-def data_dump(raw_data):
-    with open('flight_data_raw.json', 'w') as f:
-        json.dump(raw_data, f, indent=4)
 
 
 def raw_data_cleaner(raw_data):
-    x=0
     df = pd.DataFrame(columns = ['airline', 'airplane', 'departure_date', 'departure_time', 'arrival_date', 'arrival_time', 'duration', 'leg_room', 'price'])
     for flight in raw_data:
         try:
@@ -71,15 +63,22 @@ def raw_data_cleaner(raw_data):
 
 dept_id = 'BOM'
 arr_id = 'IXB'
-outbound_date = '2026-05-28'
-return_date = '2026-06-03'
+outbound_date = '2026-06-28'
+return_date = '2026-07-03'
 
-# flight_data = get_flight_data(dept_id, arr_id, outbound_date, return_date, adults)
+def extract_flight(dept_id, arr_id, outbound_date, return_date):
+    raw_data = get_flight_data(dept_id, arr_id, outbound_date, return_date)
+    df = raw_data_cleaner(raw_data)
+    return df
+
+
+
 # if flight_data:
 #     data_dump(flight_data)
 
-with open('flight_data_raw.json', 'r') as f:
-    raw_data = json.load(f)
+# with open('flight_data_raw.json', 'r') as f:
+#     raw_data = json.load(f)
 
-df3 = raw_data_cleaner(raw_data)
-print(df3.head())
+# def data_dump(raw_data):
+#     with open('flight_data_raw.json', 'w') as f:
+#         json.dump(raw_data, f, indent=4)
