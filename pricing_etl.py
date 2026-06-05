@@ -5,7 +5,7 @@ import json
 import pandas as pd
 
 
-def flight_price(dept_id, arr_id, outbound_date, return_date):
+def flight_price(dept_id, arr_id, outbound_date, return_date,adults=1):
     load_dotenv()
     api_key = os.getenv("SERPAPI_KEY")
     try:
@@ -16,7 +16,8 @@ def flight_price(dept_id, arr_id, outbound_date, return_date):
             "arrival_id": arr_id,
             "outbound_date": outbound_date,
             "return_date": return_date,
-            'currency': 'INR'
+            'currency': 'INR',
+            'adults': adults
         })
         if 'error' in results:
                 print(f"SerpApi error: {results['error']}")
@@ -49,7 +50,7 @@ def monthly_hotel(raw_data):
     df =df.round(2)
     return df
 
-def get_hotel_data(location, checkin_date, checkout_date):
+def get_hotel_data(location, checkin_date, checkout_date,adults=1):
     load_dotenv()
     key = os.getenv("SERPAPI_KEY")
     try:
@@ -60,6 +61,7 @@ def get_hotel_data(location, checkin_date, checkout_date):
             'check_in_date': checkin_date,
             'check_out_date': checkout_date,
             'currency': "INR",
+            'adults': adults
             })
         if 'error' in results:
             print(f"SerpApi error: {results['error']}")
