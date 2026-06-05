@@ -4,7 +4,7 @@ import os
 import json
 import pandas as pd
 
-def get_hotel_data(location, checkin_date, checkout_date, adults):
+def get_hotel_data(location, checkin_date, checkout_date, adults=1):
     load_dotenv()
     key = os.getenv("SERPAPI_KEY")
     try:
@@ -32,7 +32,7 @@ def data_dump(raw_data):
 def raw_data_cleaner(raw_data):
     df= pd.DataFrame(columns = ['name', 'stay_type', 'rating', 'price'])
     for hotel in raw_data:
-        if 'essential_info' not in hotel:
+        if 'total_rate' not in hotel:
             break
         try:
             name = hotel.get('name')
@@ -52,7 +52,7 @@ def raw_data_cleaner(raw_data):
                 'stay_type': stay_type,
                 'rating': rating,
                 'price': price,
-                'noPeople': next(noPeople, 'N/A'),
+                'noPeople': next(noPeople, 'N/A').split()[-1],
                 'Beds': next(Beds, 'N/A'),
                 'Bedroom': next(Bedroom, 'N/A'),
                 'Bathroom': next(Bathroom, 'N/A'),
@@ -70,7 +70,6 @@ def raw_data_cleaner(raw_data):
 location = "Sikkim"
 checkin_date = "2026-05-28"
 checkout_date = "2026-06-03"
-adults = 5
 
 # raw_data = get_hotel_data(location, checkin_date, checkout_date, adults)
 # data_dump(raw_data)
