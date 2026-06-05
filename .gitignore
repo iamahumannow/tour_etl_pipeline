@@ -7,3 +7,5 @@ build/
 
 __pycache__/
 *.pyc
+
+to_do.txt
