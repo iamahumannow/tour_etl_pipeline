@@ -19,6 +19,7 @@ def extract_weather_data(location):
         "latitude": location["latitude"],
         "longitude": location["longitude"],
         "hourly": "temperature_2m,precipitation",
+        "daily": "sunshine_duration",
         "current":'precipitation,temperature_2m',
         'timezone': "auto",
         'past_days': 14,
@@ -46,6 +47,7 @@ def raw_data_cleaner(raw_data):
         hourwise = raw_data['hourly']['time']
         hourwise_temp2m = raw_data['hourly']['temperature_2m']
         hourwise_precipitation = raw_data['hourly']['precipitation']
+        sunshine_duration = raw_data['daily']['sunshine_duration']
         
         df = pd.DataFrame({
             'latitude': latitude,
@@ -54,9 +56,11 @@ def raw_data_cleaner(raw_data):
             'date': pd.to_datetime(hourwise).date,
             'time': pd.to_datetime(hourwise).time,
             'temperature_2m': hourwise_temp2m,
-            'precipitation': hourwise_precipitation
+            'precipitation': hourwise_precipitation,
+            'sunshine_duration': sunshine_duration
         })
-        
+        df['sunshine_duration'] = df['sunshine_duration']/3600
+
         return df
 
     except KeyError as e:

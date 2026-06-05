@@ -10,3 +10,5 @@ __pycache__/
 
 weather_data_raw.json
 pandas_loader.ipynb
+
+to_do.txt
