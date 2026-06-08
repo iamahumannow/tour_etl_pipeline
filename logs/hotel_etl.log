@@ -1,0 +1,44 @@
+2026-06-08 16:49:18,145 INFO Fetching hotel data for Sikkim...
+2026-06-08 16:49:18,740 INFO Hotel data fetched successfully.
+2026-06-08 16:49:18,745 ERROR Missing key in hotel data: 'check_in_time'
+2026-06-08 16:49:18,745 ERROR Missing key in hotel data: 'essential_info'
+2026-06-08 16:49:18,745 ERROR Missing key in hotel data: 'essential_info'
+2026-06-08 16:49:18,745 ERROR Missing key in hotel data: 'essential_info'
+2026-06-08 16:49:18,745 ERROR Missing key in hotel data: 'essential_info'
+2026-06-08 16:49:18,745 ERROR Missing key in hotel data: 'essential_info'
+2026-06-08 16:49:18,745 ERROR Missing key in hotel data: 'essential_info'
+2026-06-08 16:49:18,746 ERROR Missing key in hotel data: 'essential_info'
+2026-06-08 16:49:18,761 ERROR Missing key in hotel data: 'essential_info'
+2026-06-08 16:49:18,761 ERROR Missing key in hotel data: 'essential_info'
+2026-06-08 16:49:18,761 ERROR Missing key in hotel data: 'essential_info'
+2026-06-08 16:49:18,763 ERROR Missing key in hotel data: 'check_in_time'
+2026-06-08 16:49:18,763 ERROR Missing key in hotel data: 'essential_info'
+2026-06-08 16:49:18,764 ERROR Missing key in hotel data: 'essential_info'
+2026-06-08 16:49:18,764 ERROR Missing key in hotel data: 'essential_info'
+2026-06-08 16:49:18,764 ERROR Missing key in hotel data: 'essential_info'
+2026-06-08 16:49:18,764 ERROR Missing key in hotel data: 'essential_info'
+2026-06-08 16:49:18,764 INFO Extracted 3 records.
+2026-06-08 16:49:18,764 INFO ETL complete. DataFrame shape: (3, 10)
+
+2026-06-08 16:50:24,050 INFO Fetching hotel data for Sikkim...
+2026-06-08 16:50:24,186 INFO Hotel data fetched successfully.
+2026-06-08 16:50:24,194 ERROR Missing key in hotel data: 'check_in_time' for hotel: Himalayan view point
+2026-06-08 16:50:24,195 ERROR Missing key in hotel data: 'essential_info' for hotel: Vivanta Sikkim, Pakyong
+2026-06-08 16:50:24,195 ERROR Missing key in hotel data: 'essential_info' for hotel: MAYFAIR Spa Resort & Casino, Gangtok
+2026-06-08 16:50:24,195 ERROR Missing key in hotel data: 'essential_info' for hotel: Taj Guras Kutir Resort & Spa, Gangtok
+2026-06-08 16:50:24,195 ERROR Missing key in hotel data: 'essential_info' for hotel: Denzong Regency
+2026-06-08 16:50:24,195 ERROR Missing key in hotel data: 'essential_info' for hotel: Udaan Hotels | Alpine Resort, Gangtok
+2026-06-08 16:50:24,195 ERROR Missing key in hotel data: 'essential_info' for hotel: MANDARIN VILLAGE RESORT
+2026-06-08 16:50:24,195 ERROR Missing key in hotel data: 'essential_info' for hotel: The Elgin Nor-Khill - Gangtok - Heritage Resort & Spa (Since 1934)
+2026-06-08 16:50:24,196 ERROR Missing key in hotel data: 'essential_info' for hotel: Kaya Gantavya Resort & Spa | Pelling
+2026-06-08 16:50:24,197 ERROR Missing key in hotel data: 'essential_info' for hotel: Ging Tea House
+2026-06-08 16:50:24,197 ERROR Missing key in hotel data: 'essential_info' for hotel: Glenburn Tea Estate
+2026-06-08 16:50:24,197 ERROR Missing key in hotel data: 'check_in_time' for hotel: Galaxy Luxuria
+2026-06-08 16:50:24,197 ERROR Missing key in hotel data: 'essential_info' for hotel: Voyage Glenz Resort
+2026-06-08 16:50:24,197 ERROR Missing key in hotel data: 'essential_info' for hotel: Summit Namnang Courtyard & Spa
+2026-06-08 16:50:24,198 ERROR Missing key in hotel data: 'essential_info' for hotel: Namdul Retreat, Kabi
+2026-06-08 16:50:24,198 ERROR Missing key in hotel data: 'essential_info' for hotel: Magnolia Village Home Stay
+2026-06-08 16:50:24,198 ERROR Missing key in hotel data: 'essential_info' for hotel: UDAAN HOTELS | HOTEL PINE CREST
+2026-06-08 16:50:24,198 INFO Extracted 3 records.
+2026-06-08 16:50:24,198 INFO ETL complete. DataFrame shape: (3, 10)
+

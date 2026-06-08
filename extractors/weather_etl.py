@@ -2,6 +2,8 @@ import requests
 import pandas as pd
 from geopy.geocoders import Nominatim
 import json
+from logger import get_logger
+logging = get_logger("weather_etl", "weather_etl.log")
 
 def get_location(val):
     locator = Nominatim(user_agent="mygeocoder")
@@ -10,10 +12,11 @@ def get_location(val):
     if location:
         location = {"name": location.address, "latitude": location.latitude, "longitude": location.longitude}
     else:    
-        print("Location not found")
+        logging.error("Location not found")
     return location
 
 def extract_weather_data(location):
+    logging.info(f"Fetching weather data for location: {location['name']}")
     url = "https://api.open-meteo.com/v1/forecast"
     params = {
         "latitude": location["latitude"],
@@ -28,9 +31,10 @@ def extract_weather_data(location):
         response = requests.get(url, params=params)
         response.raise_for_status()
         data = response.json()
+        logging.info(f"Weather data fetched successfully for {location['name']}")
         return data
     except requests.exceptions.RequestException as e:
-        print(f"Error while fetching: {e}")
+        logging.error(f"Error while fetching: {e}")
         return None
 
 def raw_data_cleaner(raw_data):
@@ -46,15 +50,19 @@ def raw_data_cleaner(raw_data):
             'latitude': latitude,
             'longitude': longitude,
             'elevation': elevation,
-            'date': pd.to_datetime(hourwise).date,
-            'time': pd.to_datetime(hourwise).time,
-            'temperature_2m': hourwise_temp2m,
-            'precipitation': hourwise_precipitation,
+            'hour_date': pd.to_datetime(hourwise).date,
+            'hour_time': pd.to_datetime(hourwise).time,
+            'hour_temp': hourwise_temp2m,
+            'hour_precipitation': hourwise_precipitation,
         })
+        df['latitude'] = df['latitude'].round(2)
+        df['longitude'] = df['longitude'].round(2)
+        logging.info(f"Extracted {len(df)} records.")
+        logging.info(f"ETL complete. DataFrame shape: {df.shape}\n")
         return df
 
     except KeyError as e:
-        print(f"API structure changed, Missing key: {e}")
+        logging.error(f"API structure changed, Missing key: {e}")
         return None
 
 

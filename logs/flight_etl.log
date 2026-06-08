@@ -1,0 +1,10 @@
+2026-06-08 16:49:17,259 INFO Fetching flight data...
+2026-06-08 16:49:18,082 INFO Flight data fetched successfully.
+2026-06-08 16:49:18,091 INFO Extracted 4 records.
+2026-06-08 16:49:18,092 INFO ETL complete. DataFrame shape: (4, 10)
+
+2026-06-08 16:50:23,824 INFO Fetching flight data...
+2026-06-08 16:50:23,993 INFO Flight data fetched successfully.
+2026-06-08 16:50:24,000 INFO Extracted 4 records.
+2026-06-08 16:50:24,000 INFO ETL complete. DataFrame shape: (4, 10)
+

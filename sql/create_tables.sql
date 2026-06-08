@@ -21,7 +21,6 @@ CREATE TABLE IF NOT EXISTS weather (
     hour_time time not null,
     hour_temp decimal(2,1) not null,
     hour_precipitation decimal(2,1) not null,
-    sunshine decimal(2,1) not null
     );
     
 CREATE TABLE IF NOT EXISTS hotel (

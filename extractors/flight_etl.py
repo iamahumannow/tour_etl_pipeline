@@ -3,10 +3,14 @@ from dotenv import load_dotenv
 import os
 import json
 import pandas as pd
+from logger import get_logger
+
+logging = get_logger("flight_etl", "flight_etl.log")
 
 def get_flight_data(dept_id, arr_id, outbound_date, return_date, adults=1):
     load_dotenv()
     key = os.getenv("SERPAPI_KEY")
+    logging.info("Fetching flight data...")
     try:
         client = serpapi.Client(api_key=key)
         results = client.search({
@@ -20,11 +24,12 @@ def get_flight_data(dept_id, arr_id, outbound_date, return_date, adults=1):
             'stops' : 1
             })
         if 'error' in results:
-            print(f"SerpApi error: {results['error']}")
+            logging.error(f"SerpApi error: {results['error']}")
             return None
+        logging.info("Flight data fetched successfully.")
         return results['other_flights']
     except Exception as e:
-        print(f"Error fetching flight data: {e}")
+        logging.error(f"Error fetching flight data: {e}")
         return None
 
 
@@ -57,20 +62,16 @@ def raw_data_cleaner(raw_data):
             df = pd.concat([df, df2], ignore_index=True)
 
         except KeyError as e:
-            print(f"Missing key {e} in flight data: {flight}")
+            logging.error(f"Missing key {e} in flight data: {flight}")
             return df
+    logging.info(f"Extracted {len(df)} records.")
+    logging.info(f"ETL complete. DataFrame shape: {df.shape}\n")
     return df
-
-dept_id = 'BOM'
-arr_id = 'IXB'
-outbound_date = '2026-06-28'
-return_date = '2026-07-03'
 
 def extract_flight(dept_id, arr_id, outbound_date, return_date):
     raw_data = get_flight_data(dept_id, arr_id, outbound_date, return_date)
     df = raw_data_cleaner(raw_data)
     return df
-
 
 
 # if flight_data:

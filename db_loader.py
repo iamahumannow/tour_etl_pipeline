@@ -3,6 +3,7 @@ import pandas as pd
 from db_connector import get_engine
 
 logging.basicConfig(
+    filename="db_loader.log",
     level=logging.INFO,
     format="%(asctime)s %(levelname)s %(message)s"
 )
@@ -35,9 +36,9 @@ def load_weather(df: pd.DataFrame) -> None:
     _load(df, "weather")
 
 
-def load_flights(df: pd.DataFrame) -> None:
+def load_flight(df: pd.DataFrame) -> None:
     _load(df, "flight")
 
 
-def load_hotels(df: pd.DataFrame) -> None:
+def load_hotel(df: pd.DataFrame) -> None:
     _load(df, "hotel")
