@@ -1,12 +1,10 @@
 import requests
 import pandas as pd
 from geopy.geocoders import Nominatim
-import json
 
 def get_location(val):
     locator = Nominatim(user_agent="mygeocoder")
     location = locator.geocode(val)
-
     if location:
         location = {"name": location.address, "latitude": location.latitude, "longitude": location.longitude}
     else:    
@@ -32,17 +30,11 @@ def extract_weather_data(location):
     except requests.exceptions.RequestException as e:
         print(f"Error while fetching: {e}")
         return None
-    
-def data_dump(raw_data):
-    with open('historical_weather_data_raw.json', 'w') as f:
-        json.dump(raw_data, f, indent=4)
 
-def raw_data_cleaner(raw_data):
+def raw_data_cleaner(raw_data,location):
     try:
         latitude = raw_data['latitude']
         longitude = raw_data['longitude']
-        # months = (pd.to_datetime(raw_data['daily']['time'])).month_name()
-        # monthwise_temp2m_mean = raw_data['daily']['temperature_2m_mean']
         daily_time = pd.to_datetime(raw_data['daily']['time'])
         daily_temp2m_mean = raw_data['daily']['temperature_2m_mean']
         daily_temp2m_max = raw_data['daily']['temperature_2m_max']
@@ -53,7 +45,8 @@ def raw_data_cleaner(raw_data):
         df = pd.DataFrame({
             'latitude': latitude,
             'longitude': longitude,
-            'date': daily_time,
+            'location': location,
+            'month': daily_time,
             'temperature_2m': daily_temp2m_mean,
             'temperature_2m_max': daily_temp2m_max,
             'temperature_2m_min': daily_temp2m_min,
@@ -61,26 +54,28 @@ def raw_data_cleaner(raw_data):
             'sunshine_duration': daily_sunshine_duration
         })
 
-        df = df.set_index('date').resample('ME').mean().reset_index()
+        df = df.set_index('month').resample('ME').mean(numeric_only=True).reset_index()
 
-        df['date']=df['date'].dt.month_name()
-        df = df.round(2)
+        df['month']=df['month'].dt.month_name()
         df['sunshine_duration'] = df['sunshine_duration']/3600
+        df = df.round(2)
         return df
 
     except KeyError as e:
         print(f"API structure changed, Missing key: {e}")
         return None
 
-# x=input("Enter the location: ")
+x="sikkim"
+location = get_location(x)
+raw_data = extract_weather_data(location)
 
-# location = get_location(x)
-# raw_data = extract_weather_data(location)
-# data_dump(raw_data)
-
-with open('historical_weather_data_raw.json', 'r') as f:
-    raw_data = json.load(f)
-
-df = raw_data_cleaner(raw_data)
+df = raw_data_cleaner(raw_data, location['name'])
 print(df.head())
 
+
+# def data_dump(raw_data):
+#     with open('historical_weather_data_raw.json', 'w') as f:
+#         json.dump(raw_data, f, indent=4)
+
+# with open('historical_weather_data_raw.json', 'r') as f:
+#     raw_data = json.load(f)
