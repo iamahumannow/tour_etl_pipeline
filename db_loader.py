@@ -42,3 +42,12 @@ def load_flight(df: pd.DataFrame) -> None:
 
 def load_hotel(df: pd.DataFrame) -> None:
     _load(df, "hotel")
+
+def load_monthly_flight(df: pd.DataFrame) -> None:
+    _load(df, "monthly_flight")
+
+def load_monthly_hotel(df: pd.DataFrame) -> None:
+    _load(df, "monthly_hotel")  
+
+def load_monthly_weather(df: pd.DataFrame) -> None:
+    _load(df, "monthly_weather")

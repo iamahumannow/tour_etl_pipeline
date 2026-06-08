@@ -46,3 +46,15 @@ CREATE TABLE IF NOT EXISTS monthly_flight (
     price decimal(6,1),
     price_range varchar(15)
     );
+    
+CREATE TABLE IF NOT EXISTS monthly_weather (
+	latitude decimal(5,4) not null,
+    longitude decimal(5,4) not null,
+    location varchar(25) not null,
+    months varchar(20),
+    temperature_2m decimal(6,2),
+    temperature_2m_max decimal(6,2),
+    temperature_2m_min decimal(6,2),
+    precipitation decimal(6,2),
+    sunshine_duration decimal (5,2)
+    );

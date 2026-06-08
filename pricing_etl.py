@@ -1,9 +1,11 @@
 import serpapi
 from dotenv import load_dotenv
 import os
-import json
 import pandas as pd
-
+from datetime import datetime
+from dateutil.relativedelta import relativedelta
+from logger import get_logger
+logging = get_logger("pricing_etl", "pricing_etl.log")
 
 def flight_price(dept_id, arr_id, outbound_date, return_date,adults=1):
     load_dotenv()
@@ -20,27 +22,26 @@ def flight_price(dept_id, arr_id, outbound_date, return_date,adults=1):
             'adults': adults
         })
         if 'error' in results:
-                print(f"SerpApi error: {results['error']}")
+                logging.error(f"SerpApi error: {results['error']}")
                 return None
         return results['price_insights']
 
     except Exception as e:
-        print(f"Error fetching flight data: {e}")
+        logging.error(f"Error fetching flight data: {e}")
         return None
 
-def data_dump(raw_data):
-    with open('hotel_pricing_data.json', 'w') as f:
-        json.dump(raw_data, f, indent=4)
-
-def monthly_flight(raw_data):
+def monthly_flight(raw_data,location):
     df = pd.DataFrame(raw_data).T
     df.columns = ['lowest_price', 'price_level']
     df.index.name = 'Month'
     df.reset_index(inplace=True)
     df['Month'] = pd.to_datetime(df['Month'], format='%Y-%m-%d').dt.strftime('%B')
+    df = df.round(2)
+    df['Location'] = location
+    df.insert(0, 'Location', df.pop('Location'))
     return df
 
-def monthly_hotel(raw_data):
+def monthly_hotel(raw_data, location):
     clean_data = {key: sum(value)/len(value) for key, value in raw_data.items()}
     df = pd.DataFrame(clean_data, index=['lowest_price']).T
     df.columns = ['lowest_price']
@@ -48,6 +49,8 @@ def monthly_hotel(raw_data):
     df.reset_index(inplace=True)
     df['Month'] = pd.to_datetime(df['Month'], format='%Y-%m-%d').dt.strftime('%B')
     df =df.round(2)
+    df['Location'] = location
+    df.insert(0, 'Location', df.pop('Location'))
     return df
 
 def get_hotel_data(location, checkin_date, checkout_date,adults=1):
@@ -64,41 +67,42 @@ def get_hotel_data(location, checkin_date, checkout_date,adults=1):
             'adults': adults
             })
         if 'error' in results:
-            print(f"SerpApi error: {results['error']}")
+            logging.error(f"SerpApi error: {results['error']}")
             return None
         return results['properties']
     except Exception as e:
-        print(f"Error fetching hotel data: {e}")
+        logging.error(f"Error fetching hotel data: {e}")
         return None
-
-with open('hotel_data_raw.json', 'r') as f:
-    raw_data = json.load(f)
 
 location = 'Sikkim'
 dept_id = 'BOM'
 arr_id = 'IXB'
-start_date = '2026-xx-08'
-end_date = '2026-xx-14'
+start_date = datetime.today()
+end_date = start_date + relativedelta(days=7)
 val={}
-# res = get_hotel_data(location, start_date, end_date)
-# data_dump(res)
 
-# for x in range(pd.Timestamp.now().month+1,13):
-#     checkin_date = start_date.replace('xx', str(x).zfill(2))
-#     checkout_date = end_date.replace('xx', str(x).zfill(2))
-#     val[checkin_date] = []
-#     res =get_hotel_data(location, checkin_date, checkout_date)
-#     for hotel in res:
-#         if 'total_rate' not in hotel: break
-#         val[checkin_date].append(hotel['total_rate']['extracted_lowest'])
+for i in range(10):
+    checkin_date = (start_date + relativedelta(months=i)).strftime('%Y-%m-%d')
+    checkout_date = (end_date + relativedelta(months=i)).strftime('%Y-%m-%d')
+    val[checkin_date] = []
+    res =get_hotel_data(location, checkin_date, checkout_date)
+    for hotel in res:
+        if 'total_rate' not in hotel: break
+        val[checkin_date].append(hotel['total_rate']['extracted_lowest'])
 
-# print(val)
-# for hotel in raw_data:
-#     price = hotel.get('total_rate', {}).get('extracted_lowest')
-#     if price: print(price)
+print(monthly_hotel(val,location))
 
-# val= {}
+for x in range(10):
+    outbound_date = (start_date + relativedelta(months=x)).strftime('%Y-%m-%d')
+    return_date = (end_date + relativedelta(months=x)).strftime('%Y-%m-%d')
+    pricing_data = flight_price(dept_id, arr_id, outbound_date, return_date)
+    if pricing_data:
+        val[outbound_date] = [pricing_data['lowest_price'], pricing_data['price_level']]
+    else:
+        logging.warning(f"No flight data available for {outbound_date}")
+        val[outbound_date] = [None, None]
 
+print(monthly_flight(val,location))
 # for x in range(pd.Timestamp.now().month+1,13):
 #     outbound_date = start_date.replace('xx', str(x).zfill(2))
 #     return_date = end_date.replace('xx', str(x).zfill(2))
@@ -106,10 +110,10 @@ val={}
 #     if pricing_data:
 #         val[outbound_date] = [pricing_data['lowest_price'], pricing_data['price_level']]
 
-# data_dump(val)
 
-# df = monthly_flight(json.load(open('flight_pricing_data.json')))
-# print(df)
+#with open('hotel_data_raw.json', 'r') as f:
+#     raw_data = json.load(f)
 
-df = monthly_hotel(json.load(open('hotel_pricing_data.json')))
-print(df)
+# def data_dump(raw_data):
+#     with open('hotel_pricing_data.json', 'w') as f:
+#         json.dump(raw_data, f, indent=4)
