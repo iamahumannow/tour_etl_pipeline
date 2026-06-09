@@ -1,12 +1,8 @@
 import logging
 import pandas as pd
 from db_connector import get_engine
-
-logging.basicConfig(
-    filename="db_loader.log",
-    level=logging.INFO,
-    format="%(asctime)s %(levelname)s %(message)s"
-)
+from logger import get_logger
+logging = get_logger("db_loader", "db_loader.log")
 
 def _load(df: pd.DataFrame, table_name: str) -> None:
     if df is None or df.empty:

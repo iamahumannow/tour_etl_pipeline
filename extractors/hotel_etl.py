@@ -40,7 +40,8 @@ def raw_data_cleaner(raw_data):
             stay_type= hotel['type']
             rating = hotel.get('location_rating')
             price = hotel.get('total_rate', {}).get('extracted_lowest')
-            for item in hotel['essential_info']:
+            noPeople = Beds = Bedroom = Bathroom = 'N/A'
+            for item in hotel.get('essential_info', []):
                 if 'sleeps' in item.lower():
                     noPeople = item
                 elif 'beds' in item.lower():
@@ -49,7 +50,7 @@ def raw_data_cleaner(raw_data):
                     Bedroom = item
                 elif 'bathroom' in item.lower():
                     Bathroom = item
-            check_in_out = hotel['check_in_time'] + ' - ' + hotel['check_out_time']
+            check_in_out = hotel.get('check_in_time', 'N/A') + ' - ' + hotel.get('check_out_time', 'N/A')
             airport =1 if any('airport' in place['name'].lower() for place in hotel.get('nearby_places', [])) else 0
 
             df2 = pd.DataFrame({
