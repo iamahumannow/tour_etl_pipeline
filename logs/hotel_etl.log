@@ -42,3 +42,105 @@
 2026-06-08 16:50:24,198 INFO Extracted 3 records.
 2026-06-08 16:50:24,198 INFO ETL complete. DataFrame shape: (3, 10)
 
+2026-06-09 15:42:27,694 INFO Fetching hotel data for Sikkim...
+2026-06-09 15:42:28,191 INFO Hotel data fetched successfully.
+2026-06-09 15:42:28,197 ERROR Missing key in hotel data: 'check_in_time' for hotel: Himalayan view point
+2026-06-09 15:42:28,197 ERROR Missing key in hotel data: 'essential_info' for hotel: Vivanta Sikkim, Pakyong
+2026-06-09 15:42:28,197 ERROR Missing key in hotel data: 'essential_info' for hotel: MAYFAIR Spa Resort & Casino, Gangtok
+2026-06-09 15:42:28,197 ERROR Missing key in hotel data: 'essential_info' for hotel: Taj Guras Kutir Resort & Spa, Gangtok
+2026-06-09 15:42:28,197 ERROR Missing key in hotel data: 'essential_info' for hotel: MANDARIN VILLAGE RESORT
+2026-06-09 15:42:28,197 ERROR Missing key in hotel data: 'essential_info' for hotel: Ging Tea House
+2026-06-09 15:42:28,198 ERROR Missing key in hotel data: 'essential_info' for hotel: Magnolia Village Home Stay
+2026-06-09 15:42:28,198 ERROR Missing key in hotel data: 'essential_info' for hotel: Udaan Hotels | Alpine Resort, Gangtok
+2026-06-09 15:42:28,198 ERROR Missing key in hotel data: 'essential_info' for hotel: Summit Namnang Courtyard & Spa
+2026-06-09 15:42:28,198 ERROR Missing key in hotel data: 'essential_info' for hotel: Kaya Gantavya Resort & Spa | Pelling
+2026-06-09 15:42:28,198 INFO Extracted 1 records.
+2026-06-09 15:42:28,198 INFO ETL complete. DataFrame shape: (1, 10)
+
+2026-06-09 15:45:20,713 INFO Fetching hotel data for Sikkim...
+2026-06-09 15:45:20,859 INFO Hotel data fetched successfully.
+2026-06-09 15:45:20,859 ERROR Missing key in hotel data: 'check_in_time' for hotel: Himalayan view point
+2026-06-09 15:45:20,859 ERROR Missing key in hotel data: 'essential_info' for hotel: Vivanta Sikkim, Pakyong
+2026-06-09 15:45:20,859 ERROR Missing key in hotel data: 'essential_info' for hotel: MAYFAIR Spa Resort & Casino, Gangtok
+2026-06-09 15:45:20,859 ERROR Missing key in hotel data: 'essential_info' for hotel: Taj Guras Kutir Resort & Spa, Gangtok
+2026-06-09 15:45:20,859 ERROR Missing key in hotel data: 'essential_info' for hotel: MANDARIN VILLAGE RESORT
+2026-06-09 15:45:20,859 ERROR Missing key in hotel data: 'essential_info' for hotel: Ging Tea House
+2026-06-09 15:45:20,859 ERROR Missing key in hotel data: 'essential_info' for hotel: Magnolia Village Home Stay
+2026-06-09 15:45:20,859 ERROR Missing key in hotel data: 'essential_info' for hotel: Udaan Hotels | Alpine Resort, Gangtok
+2026-06-09 15:45:20,859 ERROR Missing key in hotel data: 'essential_info' for hotel: Summit Namnang Courtyard & Spa
+2026-06-09 15:45:20,859 ERROR Missing key in hotel data: 'essential_info' for hotel: Kaya Gantavya Resort & Spa | Pelling
+2026-06-09 15:45:20,859 INFO Extracted 1 records.
+2026-06-09 15:45:20,859 INFO ETL complete. DataFrame shape: (1, 10)
+
+2026-06-09 15:47:25,693 INFO Fetching hotel data for Sikkim...
+2026-06-09 15:47:26,000 INFO Hotel data fetched successfully.
+2026-06-09 15:48:02,153 INFO Fetching hotel data for Sikkim...
+2026-06-09 15:48:02,360 INFO Hotel data fetched successfully.
+2026-06-09 15:48:02,376 INFO Extracted 11 records.
+2026-06-09 15:48:02,376 INFO ETL complete. DataFrame shape: (11, 10)
+
+2026-06-09 15:55:08,263 INFO Fetching hotel data for Sikkim...
+2026-06-09 15:55:08,402 INFO Hotel data fetched successfully.
+2026-06-09 15:55:08,429 INFO Extracted 11 records.
+2026-06-09 15:55:08,429 INFO ETL complete. DataFrame shape: (11, 11)
+
+2026-06-09 15:59:25,425 INFO Fetching hotel data for Goa...
+2026-06-09 15:59:25,885 INFO Hotel data fetched successfully.
+2026-06-09 15:59:25,922 INFO Extracted 20 records.
+2026-06-09 15:59:25,922 INFO ETL complete. DataFrame shape: (20, 11)
+
+2026-06-09 15:59:27,392 INFO Fetching hotel data for Kerala...
+2026-06-09 15:59:30,592 INFO Hotel data fetched successfully.
+2026-06-09 15:59:30,597 INFO Extracted 3 records.
+2026-06-09 15:59:30,597 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-06-09 15:59:32,427 INFO Fetching hotel data for Rajasthan...
+2026-06-09 15:59:35,177 INFO Hotel data fetched successfully.
+2026-06-09 15:59:35,202 INFO Extracted 20 records.
+2026-06-09 15:59:35,207 INFO ETL complete. DataFrame shape: (20, 11)
+
+2026-06-09 16:02:37,990 INFO Fetching hotel data for Goa...
+2026-06-09 16:02:39,069 INFO Hotel data fetched successfully.
+2026-06-09 16:02:39,094 INFO Extracted 20 records.
+2026-06-09 16:02:39,094 INFO ETL complete. DataFrame shape: (20, 11)
+
+2026-06-09 16:02:40,945 INFO Fetching hotel data for Kerala...
+2026-06-09 16:02:41,567 INFO Hotel data fetched successfully.
+2026-06-09 16:02:41,576 INFO Extracted 3 records.
+2026-06-09 16:02:41,576 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-06-09 16:02:43,003 INFO Fetching hotel data for Rajasthan...
+2026-06-09 16:02:44,337 INFO Hotel data fetched successfully.
+2026-06-09 16:02:44,371 INFO Extracted 20 records.
+2026-06-09 16:02:44,371 INFO ETL complete. DataFrame shape: (20, 11)
+
+2026-06-09 16:06:24,604 INFO Fetching hotel data for Goa...
+2026-06-09 16:06:25,070 INFO Hotel data fetched successfully.
+2026-06-09 16:06:25,112 INFO Extracted 20 records.
+2026-06-09 16:06:25,112 INFO ETL complete. DataFrame shape: (20, 11)
+
+2026-06-09 16:06:26,388 INFO Fetching hotel data for Kerala...
+2026-06-09 16:06:26,997 INFO Hotel data fetched successfully.
+2026-06-09 16:06:27,005 INFO Extracted 3 records.
+2026-06-09 16:06:27,005 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-06-09 16:06:28,078 INFO Fetching hotel data for Rajasthan...
+2026-06-09 16:06:28,204 INFO Hotel data fetched successfully.
+2026-06-09 16:06:28,240 INFO Extracted 20 records.
+2026-06-09 16:06:28,240 INFO ETL complete. DataFrame shape: (20, 11)
+
+2026-06-09 16:08:49,906 INFO Fetching hotel data for Goa...
+2026-06-09 16:08:50,039 INFO Hotel data fetched successfully.
+2026-06-09 16:08:50,067 INFO Extracted 20 records.
+2026-06-09 16:08:50,067 INFO ETL complete. DataFrame shape: (20, 11)
+
+2026-06-09 16:08:51,254 INFO Fetching hotel data for Kerala...
+2026-06-09 16:08:51,788 INFO Hotel data fetched successfully.
+2026-06-09 16:08:51,794 INFO Extracted 3 records.
+2026-06-09 16:08:51,794 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-06-09 16:08:53,027 INFO Fetching hotel data for Rajasthan...
+2026-06-09 16:08:53,202 INFO Hotel data fetched successfully.
+2026-06-09 16:08:53,240 INFO Extracted 20 records.
+2026-06-09 16:08:53,240 INFO ETL complete. DataFrame shape: (20, 11)
+

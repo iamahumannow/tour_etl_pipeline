@@ -37,7 +37,7 @@ def extract_weather_data(location):
         logging.error(f"Error while fetching: {e}")
         return None
 
-def raw_data_cleaner(raw_data):
+def raw_data_cleaner(raw_data,x):
     try:
         latitude = raw_data['latitude']
         longitude = raw_data['longitude']
@@ -47,6 +47,7 @@ def raw_data_cleaner(raw_data):
         hourwise_precipitation = raw_data['hourly']['precipitation']
         
         df = pd.DataFrame({
+            'location': x,
             'latitude': latitude,
             'longitude': longitude,
             'elevation': elevation,
@@ -69,7 +70,7 @@ def raw_data_cleaner(raw_data):
 def extract_weather(x):
     location = get_location(x)
     raw_data = extract_weather_data(location)
-    df = raw_data_cleaner(raw_data)
+    df = raw_data_cleaner(raw_data,x)
     return df
 
 

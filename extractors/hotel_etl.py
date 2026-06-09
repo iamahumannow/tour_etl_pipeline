@@ -3,6 +3,8 @@ import serpapi
 from dotenv import load_dotenv
 import os
 import pandas as pd
+import warnings
+warnings.filterwarnings('ignore', category=FutureWarning)
 from logger import get_logger
 logging = get_logger("hotel_etl", "hotel_etl.log")
 
@@ -30,7 +32,7 @@ def get_hotel_data(location, checkin_date, checkout_date, adults=1):
         logging.error(f"Error fetching hotel data: {e}")
         return None
 
-def raw_data_cleaner(raw_data):
+def raw_data_cleaner(raw_data,location):
     df= pd.DataFrame(columns = ['name', 'stay_type', 'rating', 'price'])
     for hotel in raw_data:
         if 'total_rate' not in hotel:
@@ -51,9 +53,10 @@ def raw_data_cleaner(raw_data):
                 elif 'bathroom' in item.lower():
                     Bathroom = item
             check_in_out = hotel.get('check_in_time', 'N/A') + ' - ' + hotel.get('check_out_time', 'N/A')
-            airport =1 if any('airport' in place['name'].lower() for place in hotel.get('nearby_places', [])) else 0
+            airport ='Yes' if any('airport' in place['name'].lower() for place in hotel.get('nearby_places', [])) else 'No'
 
             df2 = pd.DataFrame({
+                'location': location,
                 'name': name,
                 'stay_type': stay_type,
                 'rating': rating,
@@ -63,7 +66,7 @@ def raw_data_cleaner(raw_data):
                 'Bedroom': int(x.group()) if (x := re.match(r'^\d+', Bedroom)) else None,
                 'Bathroom': int(x.group()) if (x := re.match(r'^\d+', Bathroom)) else None,
                 'check_in_out': check_in_out,
-                'airport': airport
+                'close_to_airport': airport
             }, index=[0])
         
             df = pd.concat([df, df2], ignore_index=True)
@@ -79,7 +82,7 @@ def raw_data_cleaner(raw_data):
 
 def extract_hotel(location, checkin_date, checkout_date):
     raw_data = get_hotel_data(location, checkin_date, checkout_date)
-    df= raw_data_cleaner(raw_data)
+    df= raw_data_cleaner(raw_data,location)
     return df
 
 # df = extract_hotel("Sikkim", "2026-06-28", "2026-07-03")

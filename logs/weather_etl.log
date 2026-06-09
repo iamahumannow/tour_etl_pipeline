@@ -8,3 +8,78 @@
 2026-06-08 16:50:23,681 INFO Extracted 672 records.
 2026-06-08 16:50:23,681 INFO ETL complete. DataFrame shape: (672, 7)
 
+2026-06-09 15:42:26,385 INFO Fetching weather data for location: Sikkim, India
+2026-06-09 15:42:26,994 INFO Weather data fetched successfully for Sikkim, India
+2026-06-09 15:42:27,017 INFO Extracted 672 records.
+2026-06-09 15:42:27,018 INFO ETL complete. DataFrame shape: (672, 7)
+
+2026-06-09 15:45:19,596 INFO Fetching weather data for location: Sikkim, India
+2026-06-09 15:45:20,314 INFO Weather data fetched successfully for Sikkim, India
+2026-06-09 15:45:20,320 INFO Extracted 672 records.
+2026-06-09 15:45:20,322 INFO ETL complete. DataFrame shape: (672, 7)
+
+2026-06-09 15:55:06,937 INFO Fetching weather data for location: Sikkim, India
+2026-06-09 15:55:07,558 INFO Weather data fetched successfully for Sikkim, India
+2026-06-09 15:55:07,566 INFO Extracted 672 records.
+2026-06-09 15:55:07,566 INFO ETL complete. DataFrame shape: (672, 7)
+
+2026-06-09 15:59:24,296 INFO Fetching weather data for location: Goa, India
+2026-06-09 15:59:25,014 INFO Weather data fetched successfully for Goa, India
+2026-06-09 15:59:25,020 INFO Extracted 672 records.
+2026-06-09 15:59:25,020 INFO ETL complete. DataFrame shape: (672, 7)
+
+2026-06-09 15:59:26,399 INFO Fetching weather data for location: Kerala, India
+2026-06-09 15:59:27,079 INFO Weather data fetched successfully for Kerala, India
+2026-06-09 15:59:27,079 INFO Extracted 672 records.
+2026-06-09 15:59:27,079 INFO ETL complete. DataFrame shape: (672, 7)
+
+2026-06-09 15:59:31,466 INFO Fetching weather data for location: Rajasthan, India
+2026-06-09 15:59:32,160 INFO Weather data fetched successfully for Rajasthan, India
+2026-06-09 15:59:32,166 INFO Extracted 672 records.
+2026-06-09 15:59:32,166 INFO ETL complete. DataFrame shape: (672, 7)
+
+2026-06-09 16:02:36,630 INFO Fetching weather data for location: Goa, India
+2026-06-09 16:02:37,401 INFO Weather data fetched successfully for Goa, India
+2026-06-09 16:02:37,407 INFO Extracted 672 records.
+2026-06-09 16:02:37,407 INFO ETL complete. DataFrame shape: (672, 7)
+
+2026-06-09 16:02:39,509 INFO Fetching weather data for location: Kerala, India
+2026-06-09 16:02:40,268 INFO Weather data fetched successfully for Kerala, India
+2026-06-09 16:02:40,272 INFO Extracted 672 records.
+2026-06-09 16:02:40,273 INFO ETL complete. DataFrame shape: (672, 7)
+
+2026-06-09 16:02:41,984 INFO Fetching weather data for location: Rajasthan, India
+2026-06-09 16:02:42,658 INFO Weather data fetched successfully for Rajasthan, India
+2026-06-09 16:02:42,662 INFO Extracted 672 records.
+2026-06-09 16:02:42,662 INFO ETL complete. DataFrame shape: (672, 7)
+
+2026-06-09 16:06:23,463 INFO Fetching weather data for location: Goa, India
+2026-06-09 16:06:24,208 INFO Weather data fetched successfully for Goa, India
+2026-06-09 16:06:24,216 INFO Extracted 672 records.
+2026-06-09 16:06:24,216 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-06-09 16:06:25,307 INFO Fetching weather data for location: Kerala, India
+2026-06-09 16:06:26,030 INFO Weather data fetched successfully for Kerala, India
+2026-06-09 16:06:26,049 INFO Extracted 672 records.
+2026-06-09 16:06:26,050 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-06-09 16:06:27,192 INFO Fetching weather data for location: Rajasthan, India
+2026-06-09 16:06:27,758 INFO Weather data fetched successfully for Rajasthan, India
+2026-06-09 16:06:27,764 INFO Extracted 672 records.
+2026-06-09 16:06:27,764 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-06-09 16:08:48,737 INFO Fetching weather data for location: Goa, India
+2026-06-09 16:08:49,524 INFO Weather data fetched successfully for Goa, India
+2026-06-09 16:08:49,535 INFO Extracted 672 records.
+2026-06-09 16:08:49,539 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-06-09 16:08:50,262 INFO Fetching weather data for location: Kerala, India
+2026-06-09 16:08:50,950 INFO Weather data fetched successfully for Kerala, India
+2026-06-09 16:08:50,954 INFO Extracted 672 records.
+2026-06-09 16:08:50,954 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-06-09 16:08:51,976 INFO Fetching weather data for location: Rajasthan, India
+2026-06-09 16:08:52,757 INFO Weather data fetched successfully for Rajasthan, India
+2026-06-09 16:08:52,761 INFO Extracted 672 records.
+2026-06-09 16:08:52,762 INFO ETL complete. DataFrame shape: (672, 8)
+

@@ -8,3 +8,66 @@
 2026-06-08 16:50:24,000 INFO Extracted 4 records.
 2026-06-08 16:50:24,000 INFO ETL complete. DataFrame shape: (4, 10)
 
+2026-06-09 15:42:27,190 INFO Fetching flight data...
+2026-06-09 15:42:27,633 INFO Flight data fetched successfully.
+2026-06-09 15:42:27,641 INFO Extracted 4 records.
+2026-06-09 15:42:27,641 INFO ETL complete. DataFrame shape: (4, 10)
+
+2026-06-09 15:45:20,470 INFO Fetching flight data...
+2026-06-09 15:45:20,661 INFO Flight data fetched successfully.
+2026-06-09 15:45:20,667 INFO Extracted 4 records.
+2026-06-09 15:45:20,667 INFO ETL complete. DataFrame shape: (4, 10)
+
+2026-06-09 15:55:07,725 INFO Fetching flight data...
+2026-06-09 15:55:08,258 INFO Flight data fetched successfully.
+2026-06-09 15:59:25,179 INFO Fetching flight data...
+2026-06-09 15:59:25,421 INFO Flight data fetched successfully.
+2026-06-09 15:59:27,183 INFO Fetching flight data...
+2026-06-09 15:59:27,384 INFO Flight data fetched successfully.
+2026-06-09 15:59:32,246 INFO Fetching flight data...
+2026-06-09 15:59:32,424 INFO Flight data fetched successfully.
+2026-06-09 16:02:37,536 INFO Fetching flight data...
+2026-06-09 16:02:37,923 INFO Flight data fetched successfully.
+2026-06-09 16:02:37,936 INFO Extracted 4 records.
+2026-06-09 16:02:37,936 INFO ETL complete. DataFrame shape: (4, 11)
+
+2026-06-09 16:02:40,341 INFO Fetching flight data...
+2026-06-09 16:02:40,892 INFO Flight data fetched successfully.
+2026-06-09 16:02:40,898 INFO Extracted 4 records.
+2026-06-09 16:02:40,898 INFO ETL complete. DataFrame shape: (4, 11)
+
+2026-06-09 16:02:42,735 INFO Fetching flight data...
+2026-06-09 16:02:42,963 INFO Flight data fetched successfully.
+2026-06-09 16:02:42,970 INFO Extracted 4 records.
+2026-06-09 16:02:42,970 INFO ETL complete. DataFrame shape: (4, 11)
+
+2026-06-09 16:06:24,356 INFO Fetching flight data...
+2026-06-09 16:06:24,542 INFO Flight data fetched successfully.
+2026-06-09 16:06:24,548 INFO Extracted 3 records.
+2026-06-09 16:06:24,548 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-06-09 16:06:26,165 INFO Fetching flight data...
+2026-06-09 16:06:26,309 INFO Flight data fetched successfully.
+2026-06-09 16:06:26,319 INFO Extracted 3 records.
+2026-06-09 16:06:26,319 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-06-09 16:06:27,861 INFO Fetching flight data...
+2026-06-09 16:06:28,024 INFO Flight data fetched successfully.
+2026-06-09 16:06:28,033 INFO Extracted 3 records.
+2026-06-09 16:06:28,033 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-06-09 16:08:49,671 INFO Fetching flight data...
+2026-06-09 16:08:49,835 INFO Flight data fetched successfully.
+2026-06-09 16:08:49,841 INFO Extracted 3 records.
+2026-06-09 16:08:49,841 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-06-09 16:08:51,034 INFO Fetching flight data...
+2026-06-09 16:08:51,187 INFO Flight data fetched successfully.
+2026-06-09 16:08:51,192 INFO Extracted 3 records.
+2026-06-09 16:08:51,192 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-06-09 16:08:52,845 INFO Fetching flight data...
+2026-06-09 16:08:52,981 INFO Flight data fetched successfully.
+2026-06-09 16:08:52,990 INFO Extracted 3 records.
+2026-06-09 16:08:52,990 INFO ETL complete. DataFrame shape: (3, 11)
+

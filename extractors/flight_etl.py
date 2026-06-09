@@ -33,9 +33,10 @@ def get_flight_data(dept_id, arr_id, outbound_date, return_date, adults=1):
         return None
 
 
-def raw_data_cleaner(raw_data):
+def raw_data_cleaner(raw_data,location):
     df = pd.DataFrame(columns = ['airline', 'airplane', 'departure_date', 'departure_time', 'arrival_date', 'arrival_time', 'duration', 'leg_room', 'price'])
     for flight in raw_data:
+        if 'price' not in flight: break
         try:
             airline = flight['flights'][0].get('airline')
             flight_number = flight['flights'][0].get('flight_number')
@@ -47,6 +48,7 @@ def raw_data_cleaner(raw_data):
             price = flight.get('price')
 
             df2 = pd.DataFrame({
+                'location': location,
                 'airline': airline,
                 'flight_number': flight_number,
                 'airplane': airplane,
@@ -68,9 +70,9 @@ def raw_data_cleaner(raw_data):
     logging.info(f"ETL complete. DataFrame shape: {df.shape}\n")
     return df
 
-def extract_flight(dept_id, arr_id, outbound_date, return_date):
+def extract_flight(dept_id, arr_id, outbound_date, return_date, location):
     raw_data = get_flight_data(dept_id, arr_id, outbound_date, return_date)
-    df = raw_data_cleaner(raw_data)
+    df = raw_data_cleaner(raw_data, location)
     return df
 
 
