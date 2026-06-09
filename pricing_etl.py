@@ -38,6 +38,7 @@ def monthly_flight(raw_data,location):
     df['Month'] = pd.to_datetime(df['Month'], format='%Y-%m-%d').dt.strftime('%B')
     df = df.round(2)
     df['Location'] = location
+    df.rename(columns={'lowest_price': 'price','Month': 'months', 'price_level': 'price_range'}, inplace=True)
     df.insert(0, 'Location', df.pop('Location'))
     return df
 
@@ -50,6 +51,7 @@ def monthly_hotel(raw_data, location):
     df['Month'] = pd.to_datetime(df['Month'], format='%Y-%m-%d').dt.strftime('%B')
     df =df.round(2)
     df['Location'] = location
+    df.rename(columns={'lowest_price': 'price','Month': 'months'}, inplace=True)
     df.insert(0, 'Location', df.pop('Location'))
     return df
 
@@ -79,30 +81,34 @@ dept_id = 'BOM'
 arr_id = 'IXB'
 start_date = datetime.today()
 end_date = start_date + relativedelta(days=7)
-val={}
 
-for i in range(10):
-    checkin_date = (start_date + relativedelta(months=i)).strftime('%Y-%m-%d')
-    checkout_date = (end_date + relativedelta(months=i)).strftime('%Y-%m-%d')
-    val[checkin_date] = []
-    res =get_hotel_data(location, checkin_date, checkout_date)
-    for hotel in res:
-        if 'total_rate' not in hotel: break
-        val[checkin_date].append(hotel['total_rate']['extracted_lowest'])
+def monthly_hotel_pricing(location):
+    val={}
+    for i in range(10):
+        checkin_date = (start_date + relativedelta(months=i)).strftime('%Y-%m-%d')
+        checkout_date = (end_date + relativedelta(months=i)).strftime('%Y-%m-%d')
+        val[checkin_date] = []
+        res =get_hotel_data(location, checkin_date, checkout_date)
+        for hotel in res:
+            if 'total_rate' not in hotel: break
+            val[checkin_date].append(hotel['total_rate']['extracted_lowest'])
+    return monthly_hotel(val,location)
 
-print(monthly_hotel(val,location))
 
-for x in range(10):
-    outbound_date = (start_date + relativedelta(months=x)).strftime('%Y-%m-%d')
-    return_date = (end_date + relativedelta(months=x)).strftime('%Y-%m-%d')
-    pricing_data = flight_price(dept_id, arr_id, outbound_date, return_date)
-    if pricing_data:
-        val[outbound_date] = [pricing_data['lowest_price'], pricing_data['price_level']]
-    else:
-        logging.warning(f"No flight data available for {outbound_date}")
-        val[outbound_date] = [None, None]
+def monthly_flight_pricing(dept_id, arr_id):
+    val={}
+    for x in range(10):
+        outbound_date = (start_date + relativedelta(months=x)).strftime('%Y-%m-%d')
+        return_date = (end_date + relativedelta(months=x)).strftime('%Y-%m-%d')
+        pricing_data = flight_price(dept_id, arr_id, outbound_date, return_date)
+        if pricing_data:
+            val[outbound_date] = [pricing_data['lowest_price'], pricing_data['price_level']]
+        else:
+            logging.warning(f"No flight data available for {outbound_date}")
+            val[outbound_date] = [None, None]
+    return monthly_flight(val,location)
 
-print(monthly_flight(val,location))
+
 # for x in range(pd.Timestamp.now().month+1,13):
 #     outbound_date = start_date.replace('xx', str(x).zfill(2))
 #     return_date = end_date.replace('xx', str(x).zfill(2))

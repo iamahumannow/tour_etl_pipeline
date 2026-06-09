@@ -144,3 +144,18 @@
 2026-06-09 16:08:53,240 INFO Extracted 20 records.
 2026-06-09 16:08:53,240 INFO ETL complete. DataFrame shape: (20, 11)
 
+2026-06-09 19:41:00,976 INFO Fetching hotel data for Goa...
+2026-06-09 19:41:03,197 INFO Hotel data fetched successfully.
+2026-06-09 19:41:03,217 INFO Extracted 20 records.
+2026-06-09 19:41:03,218 INFO ETL complete. DataFrame shape: (20, 11)
+
+2026-06-09 19:41:41,918 INFO Fetching hotel data for Kerala...
+2026-06-09 19:41:44,179 INFO Hotel data fetched successfully.
+2026-06-09 19:41:44,185 INFO Extracted 4 records.
+2026-06-09 19:41:44,185 INFO ETL complete. DataFrame shape: (4, 11)
+
+2026-06-09 19:42:26,170 INFO Fetching hotel data for Rajasthan...
+2026-06-09 19:42:28,530 INFO Hotel data fetched successfully.
+2026-06-09 19:42:28,550 INFO Extracted 20 records.
+2026-06-09 19:42:28,550 INFO ETL complete. DataFrame shape: (20, 11)
+

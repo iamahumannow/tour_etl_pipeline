@@ -50,7 +50,6 @@ def raw_data_cleaner(raw_data,location):
         df = pd.DataFrame({
             'latitude': latitude,
             'longitude': longitude,
-            'location': location,
             'months': daily_time,
             'temperature_2m': daily_temp2m_mean,
             'temperature_2m_max': daily_temp2m_max,
@@ -60,7 +59,7 @@ def raw_data_cleaner(raw_data,location):
         })
 
         df = df.set_index('months').resample('ME').mean(numeric_only=True).reset_index()
-
+        df['location'] = location
         df['months']=df['months'].dt.month_name()
         df['sunshine_duration'] = df['sunshine_duration']/3600
         df = df.round(2)
@@ -71,12 +70,16 @@ def raw_data_cleaner(raw_data,location):
         logging.error(f"API structure changed, Missing key: {e}")
         return None
 
-x="sikkim"
-location = get_location(x)
-raw_data = extract_weather_data(location)
+def hist_data(place):
+    location = get_location(place)
+    if location:
+        raw_data = extract_weather_data(location)
+        if raw_data:
+            return raw_data_cleaner(raw_data, place)
+    logging.error(f"Failed to get historical weather data for {place}")
+    return None
 
-df = raw_data_cleaner(raw_data, location['name'])
-
+#print(hist_data('Sikkim'))
 
 # def data_dump(raw_data):
 #     with open('historical_weather_data_raw.json', 'w') as f:
