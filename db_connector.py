@@ -2,7 +2,8 @@ import os
 from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
 from urllib.parse import quote_plus
-
+from logger import get_logger
+logging = get_logger("db_connector", "db_connector.log")
 load_dotenv()
 
 def get_engine():
@@ -27,11 +28,7 @@ def test_connection():
         engine = get_engine()
         with engine.connect() as conn:
             conn.execute(text("SELECT 1"))
-        print("Connection successful.")
+        logging.info("Connection successful.")
     except Exception as e:
-        print(f"Connection failed: {e}")
-
-
-# if __name__ == "__main__":
-#     test_connection()
+        logging.error(f"Connection failed: {e}")
 

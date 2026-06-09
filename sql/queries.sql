@@ -4,11 +4,17 @@ select * from hotel;
 
 select * from weather;
 
-alter table hotel
-rename column Aiport to airport;
-
 alter table weather
-modify decimal(3,1);
+add column location varchar(30);
+
+alter table hotel
+modify airport varchar(5);
+
+alter table hotel
+rename column airport to close_to_airport;
+
+alter table hotel
+add column location varchar(30);
 
 Truncate table flight;
 truncate table hotel;
