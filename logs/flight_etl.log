@@ -86,3 +86,8 @@
 2026-06-09 19:42:26,121 INFO Extracted 3 records.
 2026-06-09 19:42:26,121 INFO ETL complete. DataFrame shape: (3, 11)
 
+2026-06-10 00:08:41,100 INFO Fetching flight data...
+2026-06-10 00:08:42,798 INFO Flight data fetched successfully.
+2026-06-10 00:08:42,823 INFO Extracted 3 records.
+2026-06-10 00:08:42,823 INFO ETL complete. DataFrame shape: (3, 11)
+

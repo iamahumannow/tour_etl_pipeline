@@ -58,3 +58,12 @@ CREATE TABLE IF NOT EXISTS monthly_weather (
     precipitation decimal(6,2),
     sunshine_duration decimal (5,2)
     );
+    
+CREATE TABLE IF NOT EXISTS best_time (
+	months varchar(20),
+    weather_score decimal(5,2),
+    flight_price_score decimal(5,2),
+    hotel_price_score decimal(5,2),
+    overall_score decimal(5,2),
+    location varchar(35)
+    );

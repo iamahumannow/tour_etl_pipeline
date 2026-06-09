@@ -98,3 +98,8 @@
 2026-06-09 19:42:25,700 INFO Extracted 672 records.
 2026-06-09 19:42:25,700 INFO ETL complete. DataFrame shape: (672, 8)
 
+2026-06-10 00:08:40,327 INFO Fetching weather data for location: Sikkim, India
+2026-06-10 00:08:40,934 INFO Weather data fetched successfully for Sikkim, India
+2026-06-10 00:08:40,955 INFO Extracted 672 records.
+2026-06-10 00:08:40,955 INFO ETL complete. DataFrame shape: (672, 8)
+

@@ -96,3 +96,19 @@
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
 2026-06-09 20:11:10,803 INFO [monthly_weather] Loaded 12 rows successfully.
 2026-06-09 20:14:59,924 INFO [monthly_weather] Loaded 12 rows successfully.
+2026-06-09 23:09:57,779 INFO [monthly_weather] Loaded 12 rows successfully.
+2026-06-09 23:10:19,415 INFO [monthly_flight] Loaded 10 rows successfully.
+2026-06-09 23:10:56,474 INFO [monthly_hotel] Loaded 10 rows successfully.
+2026-06-09 23:58:54,754 INFO [monthly_weather] Loaded 12 rows successfully.
+2026-06-09 23:58:57,733 INFO [monthly_flight] Loaded 10 rows successfully.
+2026-06-09 23:59:01,463 INFO [monthly_hotel] Loaded 10 rows successfully.
+2026-06-10 00:00:25,524 INFO [monthly_weather] Loaded 12 rows successfully.
+2026-06-10 00:00:41,395 INFO [monthly_flight] Loaded 10 rows successfully.
+2026-06-10 00:01:22,837 INFO [monthly_hotel] Loaded 10 rows successfully.
+2026-06-10 00:08:41,098 INFO [weather] Loaded 672 rows successfully.
+2026-06-10 00:08:42,882 INFO [flight] Loaded 3 rows successfully.
+2026-06-10 00:08:45,075 INFO [hotel] Loaded 17 rows successfully.
+2026-06-10 00:08:46,763 INFO [monthly_weather] Loaded 12 rows successfully.
+2026-06-10 00:08:50,852 INFO [monthly_flight] Loaded 10 rows successfully.
+2026-06-10 00:08:54,545 INFO [monthly_hotel] Loaded 10 rows successfully.
+2026-06-10 00:08:54,618 INFO [best_time] Loaded 12 rows successfully.

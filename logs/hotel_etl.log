@@ -159,3 +159,8 @@
 2026-06-09 19:42:28,550 INFO Extracted 20 records.
 2026-06-09 19:42:28,550 INFO ETL complete. DataFrame shape: (20, 11)
 
+2026-06-10 00:08:42,885 INFO Fetching hotel data for Sikkim...
+2026-06-10 00:08:44,973 INFO Hotel data fetched successfully.
+2026-06-10 00:08:45,006 INFO Extracted 17 records.
+2026-06-10 00:08:45,007 INFO ETL complete. DataFrame shape: (17, 11)
+

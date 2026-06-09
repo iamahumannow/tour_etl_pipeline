@@ -47,3 +47,6 @@ def load_monthly_hotel(df: pd.DataFrame) -> None:
 
 def load_monthly_weather(df: pd.DataFrame) -> None:
     _load(df, "monthly_weather")
+
+def load_best_time(df: pd.DataFrame) -> None:
+    _load(df, "best_time")
