@@ -77,27 +77,8 @@ def raw_data_cleaner(raw_data,location):
     return df
 
 
-
-
-
 def extract_hotel(location, checkin_date, checkout_date):
     raw_data = get_hotel_data(location, checkin_date, checkout_date)
     df= raw_data_cleaner(raw_data,location)
     return df
-
-# df = extract_hotel("Sikkim", "2026-06-28", "2026-07-03")
-# print(df[['noPeople','Beds','Bedroom','Bathroom']])
-# print(df[['noPeople','Beds','Bedroom','Bathroom']].dtypes)
-
-# location = "Sikkim"
-# checkin_date = "2026-06-28"
-# checkout_date = "2026-07-03"
-
-# data_dump(raw_data)
-# with open('hotel_data_raw.json', 'r') as f:
-#     raw_data = json.load(f)
-
-# def data_dump(raw_data):
-#     with open('hotel_data_raw.json', 'w') as f:
-#         json.dump(raw_data, f, indent=4)
 

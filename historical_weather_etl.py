@@ -78,12 +78,3 @@ def hist_data(place):
             return raw_data_cleaner(raw_data, place)
     logging.error(f"Failed to get historical weather data for {place}")
     return None
-
-#print(hist_data('Sikkim'))
-
-# def data_dump(raw_data):
-#     with open('historical_weather_data_raw.json', 'w') as f:
-#         json.dump(raw_data, f, indent=4)
-
-# with open('historical_weather_data_raw.json', 'r') as f:
-#     raw_data = json.load(f)

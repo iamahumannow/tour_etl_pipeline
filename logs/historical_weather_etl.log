@@ -83,3 +83,11 @@
 2026-06-10 00:08:46,696 INFO Weather data extracted successfully for Sikkim, India
 2026-06-10 00:08:46,697 INFO Cleaning weather data for Sikkim
 2026-06-10 00:08:46,702 INFO Cleaning completed successfully for Sikkim
+2026-06-10 17:02:07,607 INFO Extracting weather data for Varkala, Thiruvananthapuram, Kerala, 695145, India
+2026-06-10 17:02:08,249 INFO Weather data extracted successfully for Varkala, Thiruvananthapuram, Kerala, 695145, India
+2026-06-10 17:02:08,250 INFO Cleaning weather data for Varkala
+2026-06-10 17:02:08,277 INFO Cleaning completed successfully for Varkala
+2026-06-10 17:06:18,201 INFO Extracting weather data for Ladakh, India
+2026-06-10 17:06:22,720 INFO Weather data extracted successfully for Ladakh, India
+2026-06-10 17:06:22,720 INFO Cleaning weather data for Ladakh
+2026-06-10 17:06:22,720 INFO Cleaning completed successfully for Ladakh

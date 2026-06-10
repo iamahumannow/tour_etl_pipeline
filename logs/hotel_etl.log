@@ -164,3 +164,13 @@
 2026-06-10 00:08:45,006 INFO Extracted 17 records.
 2026-06-10 00:08:45,007 INFO ETL complete. DataFrame shape: (17, 11)
 
+2026-06-10 17:01:54,976 INFO Fetching hotel data for Varkala...
+2026-06-10 17:02:07,479 INFO Hotel data fetched successfully.
+2026-06-10 17:02:07,493 INFO Extracted 2 records.
+2026-06-10 17:02:07,493 INFO ETL complete. DataFrame shape: (2, 11)
+
+2026-06-10 17:06:12,938 INFO Fetching hotel data for Ladakh...
+2026-06-10 17:06:18,084 INFO Hotel data fetched successfully.
+2026-06-10 17:06:18,090 INFO Extracted 3 records.
+2026-06-10 17:06:18,090 INFO ETL complete. DataFrame shape: (3, 11)
+

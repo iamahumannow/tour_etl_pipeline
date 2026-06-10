@@ -12,10 +12,10 @@ logging = get_logger("pipeline_1", "pipeline_1.log")
 
 start_date = '2026-06-28'
 end_date = '2026-07-03'
-arr_id = 'IXB'
+arr_id = 'IXL'
 dept_id = 'BOM'
 
-destinations = ['Sikkim']
+destinations = ['Ladakh']
 
 def run():
     logging.info("Pipeline started.")
@@ -45,7 +45,7 @@ def run():
             logging.error(f"Historical weather failed for {place}: {e}")
         
         try:
-            df_monthly_flight = monthly_flight_pricing(dept_id, arr_id)
+            df_monthly_flight = monthly_flight_pricing(dept_id, arr_id,location=place)
             load_monthly_flight(df_monthly_flight)
         except Exception as e:
             logging.error(f"Monthly flight pricing failed for {place}: {e}")

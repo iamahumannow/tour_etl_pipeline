@@ -67,3 +67,9 @@ CREATE TABLE IF NOT EXISTS best_time (
     overall_score decimal(5,2),
     location varchar(35)
     );
+    
+CREATE TABLE IF NOT exists hist_flight (
+	months varchar(20),
+    price decimal(6,1),
+    fetched_at datetime
+    );

@@ -91,3 +91,30 @@
 2026-06-10 00:08:42,823 INFO Extracted 3 records.
 2026-06-10 00:08:42,823 INFO ETL complete. DataFrame shape: (3, 11)
 
+2026-06-10 17:01:49,600 INFO Fetching flight data...
+2026-06-10 17:01:54,924 INFO Flight data fetched successfully.
+2026-06-10 17:01:54,924 INFO Extracted 2 records.
+2026-06-10 17:01:54,924 INFO ETL complete. DataFrame shape: (2, 11)
+
+2026-06-10 17:06:11,912 INFO Fetching flight data...
+2026-06-10 17:06:12,868 INFO Flight data fetched successfully.
+2026-06-10 17:06:12,872 INFO Extracted 1 records.
+2026-06-10 17:06:12,872 INFO ETL complete. DataFrame shape: (1, 11)
+
+2026-06-10 17:32:37,039 INFO Fetching flight data...
+2026-06-10 17:32:38,775 ERROR SerpApi error: Google Flights hasn't returned any results for this query.
+2026-06-10 17:32:38,775 INFO Fetching flight data...
+2026-06-10 17:32:39,581 INFO Flight data fetched successfully.
+2026-06-10 17:32:39,581 INFO Extracted 3 records.
+2026-06-10 17:32:39,581 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-06-10 17:35:51,426 INFO Fetching flight data...
+2026-06-10 17:35:53,238 INFO Flight data fetched successfully.
+2026-06-10 17:35:53,239 INFO Extracted 1 records.
+2026-06-10 17:35:53,239 INFO ETL complete. DataFrame shape: (1, 11)
+
+2026-06-10 17:35:53,332 INFO Fetching flight data...
+2026-06-10 17:35:53,637 INFO Flight data fetched successfully.
+2026-06-10 17:35:53,637 INFO Extracted 3 records.
+2026-06-10 17:35:53,637 INFO ETL complete. DataFrame shape: (3, 11)
+

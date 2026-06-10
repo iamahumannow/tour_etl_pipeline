@@ -50,3 +50,6 @@ def load_monthly_weather(df: pd.DataFrame) -> None:
 
 def load_best_time(df: pd.DataFrame) -> None:
     _load(df, "best_time")
+
+def load_hist_flight(df: pd.DataFrame) -> None:
+    _load(df, "hist_flight")

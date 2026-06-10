@@ -133,3 +133,15 @@
 2026-06-10 00:08:40,141 INFO Pipeline started.
 2026-06-10 00:08:54,618 INFO Pipeline complete.
 
+2026-06-10 17:01:48,257 INFO Pipeline started.
+2026-06-10 17:03:00,190 ERROR Monthly hotel pricing failed for Varkala: division by zero
+2026-06-10 17:03:00,190 ERROR Best time computation failed for Varkala: local variable 'df_monthly_hotel' referenced before assignment
+2026-06-10 17:03:00,190 INFO Pipeline complete.
+
+2026-06-10 17:06:10,196 INFO Pipeline started.
+2026-06-10 17:08:42,716 ERROR Monthly hotel pricing failed for Ladakh: (pymysql.err.DataError) (1264, "Out of range value for column 'price' at row 8")
+[SQL: INSERT INTO monthly_hotel (`Location`, months, price, fetched_at) VALUES (%(Location)s, %(months)s, %(price)s, %(fetched_at)s)]
+[parameters: [{'Location': 'Ladakh', 'months': 'June', 'price': 20340.8, 'fetched_at': datetime.datetime(2026, 6, 10, 17, 8, 42, 660095)}, {'Location': 'Ladakh', 'months': 'July', 'price': 6263.33, 'fetched_at': datetime.datetime(2026, 6, 10, 17, 8, 42, 660095)}, {'Location': 'Ladakh', 'months': 'August', 'price': 31583.4, 'fetched_at': datetime.datetime(2026, 6, 10, 17, 8, 42, 660095)}, {'Location': 'Ladakh', 'months': 'September', 'price': 8020.7, 'fetched_at': datetime.datetime(2026, 6, 10, 17, 8, 42, 660095)}, {'Location': 'Ladakh', 'months': 'October', 'price': 43425.4, 'fetched_at': datetime.datetime(2026, 6, 10, 17, 8, 42, 660095)}, {'Location': 'Ladakh', 'months': 'November', 'price': 18293.0, 'fetched_at': datetime.datetime(2026, 6, 10, 17, 8, 42, 660095)}, {'Location': 'Ladakh', 'months': 'December', 'price': 65720.93, 'fetched_at': datetime.datetime(2026, 6, 10, 17, 8, 42, 660095)}, {'Location': 'Ladakh', 'months': 'January', 'price': 136146.0, 'fetched_at': datetime.datetime(2026, 6, 10, 17, 8, 42, 660095)}, {'Location': 'Ladakh', 'months': 'February', 'price': 32683.0, 'fetched_at': datetime.datetime(2026, 6, 10, 17, 8, 42, 660095)}, {'Location': 'Ladakh', 'months': 'March', 'price': 100849.2, 'fetched_at': datetime.datetime(2026, 6, 10, 17, 8, 42, 660095)}]]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-06-10 17:08:42,778 INFO Pipeline complete.
+

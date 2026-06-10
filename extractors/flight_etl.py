@@ -1,7 +1,6 @@
 import serpapi
 from dotenv import load_dotenv
 import os
-import json
 import pandas as pd
 from logger import get_logger
 
@@ -74,14 +73,3 @@ def extract_flight(dept_id, arr_id, outbound_date, return_date, location):
     raw_data = get_flight_data(dept_id, arr_id, outbound_date, return_date)
     df = raw_data_cleaner(raw_data, location)
     return df
-
-
-# if flight_data:
-#     data_dump(flight_data)
-
-# with open('flight_data_raw.json', 'r') as f:
-#     raw_data = json.load(f)
-
-# def data_dump(raw_data):
-#     with open('flight_data_raw.json', 'w') as f:
-#         json.dump(raw_data, f, indent=4)

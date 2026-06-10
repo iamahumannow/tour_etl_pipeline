@@ -76,9 +76,6 @@ def get_hotel_data(location, checkin_date, checkout_date,adults=1):
         logging.error(f"Error fetching hotel data: {e}")
         return None
 
-location = 'Sikkim'
-dept_id = 'BOM'
-arr_id = 'IXB'
 start_date = datetime.today()
 end_date = start_date + relativedelta(days=7)
 
@@ -95,7 +92,7 @@ def monthly_hotel_pricing(location):
     return monthly_hotel(val,location)
 
 
-def monthly_flight_pricing(dept_id, arr_id):
+def monthly_flight_pricing(dept_id, arr_id,location):
     val={}
     for x in range(10):
         outbound_date = (start_date + relativedelta(months=x)).strftime('%Y-%m-%d')
@@ -107,19 +104,3 @@ def monthly_flight_pricing(dept_id, arr_id):
             logging.warning(f"No flight data available for {outbound_date}")
             val[outbound_date] = [None, None]
     return monthly_flight(val,location)
-
-
-# for x in range(pd.Timestamp.now().month+1,13):
-#     outbound_date = start_date.replace('xx', str(x).zfill(2))
-#     return_date = end_date.replace('xx', str(x).zfill(2))
-#     pricing_data = flight_price(dept_id, arr_id, outbound_date, return_date)
-#     if pricing_data:
-#         val[outbound_date] = [pricing_data['lowest_price'], pricing_data['price_level']]
-
-
-#with open('hotel_data_raw.json', 'r') as f:
-#     raw_data = json.load(f)
-
-# def data_dump(raw_data):
-#     with open('hotel_pricing_data.json', 'w') as f:
-#         json.dump(raw_data, f, indent=4)

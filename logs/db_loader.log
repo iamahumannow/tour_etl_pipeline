@@ -112,3 +112,21 @@
 2026-06-10 00:08:50,852 INFO [monthly_flight] Loaded 10 rows successfully.
 2026-06-10 00:08:54,545 INFO [monthly_hotel] Loaded 10 rows successfully.
 2026-06-10 00:08:54,618 INFO [best_time] Loaded 12 rows successfully.
+2026-06-10 17:01:49,598 INFO [weather] Loaded 672 rows successfully.
+2026-06-10 17:01:54,969 INFO [flight] Loaded 2 rows successfully.
+2026-06-10 17:02:07,543 INFO [hotel] Loaded 2 rows successfully.
+2026-06-10 17:02:08,314 INFO [monthly_weather] Loaded 12 rows successfully.
+2026-06-10 17:02:38,960 INFO [monthly_flight] Loaded 10 rows successfully.
+2026-06-10 17:06:11,911 INFO [weather] Loaded 672 rows successfully.
+2026-06-10 17:06:12,936 INFO [flight] Loaded 1 rows successfully.
+2026-06-10 17:06:18,146 INFO [hotel] Loaded 3 rows successfully.
+2026-06-10 17:06:22,784 INFO [monthly_weather] Loaded 12 rows successfully.
+2026-06-10 17:06:46,713 INFO [monthly_flight] Loaded 10 rows successfully.
+2026-06-10 17:08:42,716 ERROR [monthly_hotel] Load failed: (pymysql.err.DataError) (1264, "Out of range value for column 'price' at row 8")
+[SQL: INSERT INTO monthly_hotel (`Location`, months, price, fetched_at) VALUES (%(Location)s, %(months)s, %(price)s, %(fetched_at)s)]
+[parameters: [{'Location': 'Ladakh', 'months': 'June', 'price': 20340.8, 'fetched_at': datetime.datetime(2026, 6, 10, 17, 8, 42, 660095)}, {'Location': 'Ladakh', 'months': 'July', 'price': 6263.33, 'fetched_at': datetime.datetime(2026, 6, 10, 17, 8, 42, 660095)}, {'Location': 'Ladakh', 'months': 'August', 'price': 31583.4, 'fetched_at': datetime.datetime(2026, 6, 10, 17, 8, 42, 660095)}, {'Location': 'Ladakh', 'months': 'September', 'price': 8020.7, 'fetched_at': datetime.datetime(2026, 6, 10, 17, 8, 42, 660095)}, {'Location': 'Ladakh', 'months': 'October', 'price': 43425.4, 'fetched_at': datetime.datetime(2026, 6, 10, 17, 8, 42, 660095)}, {'Location': 'Ladakh', 'months': 'November', 'price': 18293.0, 'fetched_at': datetime.datetime(2026, 6, 10, 17, 8, 42, 660095)}, {'Location': 'Ladakh', 'months': 'December', 'price': 65720.93, 'fetched_at': datetime.datetime(2026, 6, 10, 17, 8, 42, 660095)}, {'Location': 'Ladakh', 'months': 'January', 'price': 136146.0, 'fetched_at': datetime.datetime(2026, 6, 10, 17, 8, 42, 660095)}, {'Location': 'Ladakh', 'months': 'February', 'price': 32683.0, 'fetched_at': datetime.datetime(2026, 6, 10, 17, 8, 42, 660095)}, {'Location': 'Ladakh', 'months': 'March', 'price': 100849.2, 'fetched_at': datetime.datetime(2026, 6, 10, 17, 8, 42, 660095)}]]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-06-10 17:08:42,778 INFO [best_time] Loaded 12 rows successfully.
+2026-06-10 17:32:39,676 INFO [hist_flight] Loaded 1 rows successfully.
+2026-06-10 17:35:53,330 INFO [hist_flight] Loaded 1 rows successfully.
+2026-06-10 17:35:53,670 INFO [hist_flight] Loaded 1 rows successfully.

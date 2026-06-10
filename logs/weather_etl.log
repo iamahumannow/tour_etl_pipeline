@@ -103,3 +103,13 @@
 2026-06-10 00:08:40,955 INFO Extracted 672 records.
 2026-06-10 00:08:40,955 INFO ETL complete. DataFrame shape: (672, 8)
 
+2026-06-10 17:01:48,813 INFO Fetching weather data for location: Varkala, Thiruvananthapuram, Kerala, 695145, India
+2026-06-10 17:01:49,443 INFO Weather data fetched successfully for Varkala, Thiruvananthapuram, Kerala, 695145, India
+2026-06-10 17:01:49,455 INFO Extracted 672 records.
+2026-06-10 17:01:49,455 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-06-10 17:06:11,224 INFO Fetching weather data for location: Ladakh, India
+2026-06-10 17:06:11,800 INFO Weather data fetched successfully for Ladakh, India
+2026-06-10 17:06:11,806 INFO Extracted 672 records.
+2026-06-10 17:06:11,806 INFO ETL complete. DataFrame shape: (672, 8)
+

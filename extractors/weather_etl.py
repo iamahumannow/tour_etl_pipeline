@@ -1,7 +1,6 @@
 import requests
 import pandas as pd
 from geopy.geocoders import Nominatim
-import json
 from logger import get_logger
 logging = get_logger("weather_etl", "weather_etl.log")
 
@@ -73,20 +72,3 @@ def extract_weather(x):
     df = raw_data_cleaner(raw_data,x)
     return df
 
-
-
-#x=input("Enter the location: ")
-# print(df.head())
-#data_dump(raw_data)
-
-# if location:
-#     weather_data = extract_weather_data(location)
-#     if weather_data:
-#         print(weather_data)
-
-# with open('Tour_etl_pipeline/weather_data_raw.json', 'r') as f:
-#     raw_data = json.load(f)
-
-# def data_dump(raw_data):
-#     with open('weather_data_raw.json', 'w') as f:
-#         json.dump(raw_data, f, indent=4)
