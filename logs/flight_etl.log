@@ -118,3 +118,43 @@
 2026-06-10 17:35:53,637 INFO Extracted 3 records.
 2026-06-10 17:35:53,637 INFO ETL complete. DataFrame shape: (3, 11)
 
+2026-06-10 17:39:23,667 INFO Fetching flight data...
+2026-06-10 17:39:27,116 INFO Flight data fetched successfully.
+2026-06-10 17:39:27,130 INFO Extracted 1 records.
+2026-06-10 17:39:27,130 INFO ETL complete. DataFrame shape: (1, 11)
+
+2026-06-10 17:39:27,219 INFO Fetching flight data...
+2026-06-10 17:39:27,567 INFO Flight data fetched successfully.
+2026-06-10 17:39:27,586 INFO Extracted 3 records.
+2026-06-10 17:39:27,586 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-06-10 17:40:55,988 INFO Fetching flight data...
+2026-06-10 17:40:56,059 INFO Flight data fetched successfully.
+2026-06-10 17:40:56,065 INFO Extracted 1 records.
+2026-06-10 17:40:56,065 INFO ETL complete. DataFrame shape: (1, 11)
+
+2026-06-10 17:40:56,158 INFO Fetching flight data...
+2026-06-10 17:40:56,477 INFO Flight data fetched successfully.
+2026-06-10 17:40:56,482 INFO Extracted 3 records.
+2026-06-10 17:40:56,482 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-06-10 17:41:00,035 INFO Fetching flight data...
+2026-06-10 17:41:00,102 INFO Flight data fetched successfully.
+2026-06-10 17:41:00,113 INFO Extracted 1 records.
+2026-06-10 17:41:00,113 INFO ETL complete. DataFrame shape: (1, 11)
+
+2026-06-10 17:41:00,181 INFO Fetching flight data...
+2026-06-10 17:41:00,239 INFO Flight data fetched successfully.
+2026-06-10 17:41:00,239 INFO Extracted 3 records.
+2026-06-10 17:41:00,239 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-06-10 17:41:52,202 INFO Fetching flight data...
+2026-06-10 17:41:52,272 INFO Flight data fetched successfully.
+2026-06-10 17:41:52,278 INFO Extracted 1 records.
+2026-06-10 17:41:52,278 INFO ETL complete. DataFrame shape: (1, 11)
+
+2026-06-10 17:41:52,375 INFO Fetching flight data...
+2026-06-10 17:41:53,336 INFO Flight data fetched successfully.
+2026-06-10 17:41:53,342 INFO Extracted 3 records.
+2026-06-10 17:41:53,343 INFO ETL complete. DataFrame shape: (3, 11)
+
