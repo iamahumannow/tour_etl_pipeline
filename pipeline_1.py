@@ -10,16 +10,15 @@ from db_loader import load_weather, load_flight, load_hotel, load_monthly_weathe
 from logger import get_logger
 logging = get_logger("pipeline_1", "pipeline_1.log")
 
-start_date = '2026-06-28'
-end_date = '2026-07-03'
-arr_id = 'IXL'
+start_date = '2026-11-28'
+end_date = '2026-12-03'
 dept_id = 'BOM'
 
-destinations = ['Ladakh']
+destinations = {'Sikkim':'IXB','Manali':'IXC','Munnar':'COK'}
 
 def run():
     logging.info("Pipeline started.")
-    for place in destinations:
+    for place,arr_id in destinations.items():
         try:
             df_weather = extract_weather(place)  
             load_weather(df_weather)

@@ -174,3 +174,18 @@
 2026-06-10 17:06:18,090 INFO Extracted 3 records.
 2026-06-10 17:06:18,090 INFO ETL complete. DataFrame shape: (3, 11)
 
+2026-06-23 23:44:29,720 INFO Fetching hotel data for Sikkim...
+2026-06-23 23:44:31,763 INFO Hotel data fetched successfully.
+2026-06-23 23:44:31,789 INFO Extracted 20 records.
+2026-06-23 23:44:31,789 INFO ETL complete. DataFrame shape: (20, 11)
+
+2026-06-23 23:46:11,223 INFO Fetching hotel data for Manali...
+2026-06-23 23:46:15,177 INFO Hotel data fetched successfully.
+2026-06-23 23:46:15,185 INFO Extracted 5 records.
+2026-06-23 23:46:15,185 INFO ETL complete. DataFrame shape: (5, 11)
+
+2026-06-23 23:48:14,861 INFO Fetching hotel data for Munnar...
+2026-06-23 23:48:17,148 INFO Hotel data fetched successfully.
+2026-06-23 23:48:17,158 INFO Extracted 6 records.
+2026-06-23 23:48:17,158 INFO ETL complete. DataFrame shape: (6, 11)
+

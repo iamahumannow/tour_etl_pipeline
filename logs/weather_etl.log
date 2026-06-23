@@ -113,3 +113,18 @@
 2026-06-10 17:06:11,806 INFO Extracted 672 records.
 2026-06-10 17:06:11,806 INFO ETL complete. DataFrame shape: (672, 8)
 
+2026-06-23 23:44:25,953 INFO Fetching weather data for location: Sikkim, India
+2026-06-23 23:44:26,515 INFO Weather data fetched successfully for Sikkim, India
+2026-06-23 23:44:26,515 INFO Extracted 672 records.
+2026-06-23 23:44:26,515 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-06-23 23:46:07,166 INFO Fetching weather data for location: Manali, Kullu, Himachal Pradesh, 175131, India
+2026-06-23 23:46:07,683 INFO Weather data fetched successfully for Manali, Kullu, Himachal Pradesh, 175131, India
+2026-06-23 23:46:07,687 INFO Extracted 672 records.
+2026-06-23 23:46:07,687 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-06-23 23:48:11,942 INFO Fetching weather data for location: Munnar, Devikulam, Idukki, Kerala, 685612, India
+2026-06-23 23:48:12,491 INFO Weather data fetched successfully for Munnar, Devikulam, Idukki, Kerala, 685612, India
+2026-06-23 23:48:12,495 INFO Extracted 672 records.
+2026-06-23 23:48:12,495 INFO ETL complete. DataFrame shape: (672, 8)
+

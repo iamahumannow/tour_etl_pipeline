@@ -91,3 +91,15 @@
 2026-06-10 17:06:22,720 INFO Weather data extracted successfully for Ladakh, India
 2026-06-10 17:06:22,720 INFO Cleaning weather data for Ladakh
 2026-06-10 17:06:22,720 INFO Cleaning completed successfully for Ladakh
+2026-06-23 23:44:31,863 INFO Extracting weather data for Sikkim, India
+2026-06-23 23:44:32,640 INFO Weather data extracted successfully for Sikkim, India
+2026-06-23 23:44:32,641 INFO Cleaning weather data for Sikkim
+2026-06-23 23:44:32,654 INFO Cleaning completed successfully for Sikkim
+2026-06-23 23:46:15,338 INFO Extracting weather data for Manali, Kullu, Himachal Pradesh, 175131, India
+2026-06-23 23:46:15,978 INFO Weather data extracted successfully for Manali, Kullu, Himachal Pradesh, 175131, India
+2026-06-23 23:46:15,979 INFO Cleaning weather data for Manali
+2026-06-23 23:46:15,983 INFO Cleaning completed successfully for Manali
+2026-06-23 23:48:17,237 INFO Extracting weather data for Munnar, Devikulam, Idukki, Kerala, 685612, India
+2026-06-23 23:48:17,836 INFO Weather data extracted successfully for Munnar, Devikulam, Idukki, Kerala, 685612, India
+2026-06-23 23:48:17,836 INFO Cleaning weather data for Munnar
+2026-06-23 23:48:17,842 INFO Cleaning completed successfully for Munnar

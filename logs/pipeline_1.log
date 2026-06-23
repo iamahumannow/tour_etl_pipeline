@@ -145,3 +145,11 @@
 (Background on this error at: https://sqlalche.me/e/20/9h9h)
 2026-06-10 17:08:42,778 INFO Pipeline complete.
 
+2026-06-23 23:44:24,826 INFO Pipeline started.
+2026-06-23 23:48:11,372 ERROR Monthly hotel pricing failed for Manali: division by zero
+2026-06-23 23:49:36,954 ERROR Monthly hotel pricing failed for Munnar: division by zero
+2026-06-23 23:49:37,012 INFO Pipeline complete.
+
+2026-06-24 00:11:12,277 INFO Pipeline started.
+2026-06-24 00:12:16,947 INFO Pipeline complete.
+

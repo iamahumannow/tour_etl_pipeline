@@ -35,4 +35,4 @@ truncate table monthly_flight;
 truncate table monthly_hotel;
 truncate table monthly_weather;
 truncate table best_time;
-truncate table hist_flight;
+#truncate table hist_flight;

@@ -20,3 +20,15 @@
 2026-06-09 23:58:55,079 WARNING No flight data available for 2026-06-09
 2026-06-10 17:02:25,586 ERROR SerpApi error: Google Flights hasn't returned any results for this query.
 2026-06-10 17:02:25,602 WARNING No flight data available for 2027-02-10
+2026-06-23 23:44:45,929 ERROR SerpApi error: Google Flights hasn't returned any results for this query.
+2026-06-23 23:44:45,944 WARNING No flight data available for 2026-06-23
+2026-06-23 23:44:54,698 ERROR Error fetching flight data: 'price_insights'
+2026-06-23 23:44:54,699 WARNING No flight data available for 2026-08-23
+2026-06-23 23:45:21,019 ERROR Error fetching flight data: 'price_insights'
+2026-06-23 23:45:21,020 WARNING No flight data available for 2026-12-23
+2026-06-23 23:45:24,778 ERROR Error fetching flight data: 'price_insights'
+2026-06-23 23:45:24,779 WARNING No flight data available for 2027-01-23
+2026-06-23 23:46:34,277 ERROR Error fetching flight data: 'price_insights'
+2026-06-23 23:46:34,278 WARNING No flight data available for 2026-06-23
+2026-06-23 23:48:35,009 ERROR Error fetching flight data: 'price_insights'
+2026-06-23 23:48:35,010 WARNING No flight data available for 2026-06-23

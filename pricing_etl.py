@@ -87,7 +87,8 @@ def monthly_hotel_pricing(location):
         val[checkin_date] = []
         res =get_hotel_data(location, checkin_date, checkout_date)
         for hotel in res:
-            if 'total_rate' not in hotel: break
+            if 'total_rate' not in hotel: 
+                continue
             val[checkin_date].append(hotel['total_rate']['extracted_lowest'])
     return monthly_hotel(val,location)
 
