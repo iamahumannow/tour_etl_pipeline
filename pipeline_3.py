@@ -12,7 +12,7 @@ outbound_date = '2026-11-19'
 return_date = '2026-11-24'
 
 
-def run():
+def run(arr_id,dept_id,outbound_date,return_date):
     logging.info("Pipeline started.")
     for dest_id,dest in arr_id.items():
         try:
@@ -29,5 +29,5 @@ def run():
     logging.info("Pipeline complete.\n")
 
 if __name__ == "__main__":
-    run()
+    run(arr_id,dept_id,outbound_date,return_date)
 

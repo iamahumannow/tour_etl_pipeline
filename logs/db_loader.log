@@ -159,3 +159,61 @@
 2026-06-23 23:49:37,012 INFO [best_time] Loaded 12 rows successfully.
 2026-06-24 00:11:45,937 INFO [monthly_hotel] Loaded 10 rows successfully.
 2026-06-24 00:12:16,946 INFO [monthly_hotel] Loaded 10 rows successfully.
+2026-06-24 18:55:05,366 INFO [hist_flight] Loaded 1 rows successfully.
+2026-06-24 18:55:07,726 INFO [hist_flight] Loaded 1 rows successfully.
+2026-06-29 15:00:36,704 ERROR [weather] Load failed: quote_from_bytes() expected bytes
+2026-06-29 15:14:07,443 INFO [weather] Loaded 672 rows successfully.
+2026-06-30 18:40:34,231 INFO [weather] Loaded 672 rows successfully.
+2026-06-30 18:40:34,231 INFO [weather] Loaded 672 rows successfully.
+2026-06-30 18:41:59,614 INFO [weather] Loaded 672 rows successfully.
+2026-06-30 18:41:59,628 INFO [weather] Loaded 672 rows successfully.
+2026-06-30 18:41:59,683 INFO [weather] Loaded 672 rows successfully.
+2026-06-30 18:47:48,848 INFO [weather] Loaded 672 rows successfully.
+2026-06-30 18:47:48,857 INFO [weather] Loaded 672 rows successfully.
+2026-06-30 18:47:48,872 INFO [weather] Loaded 672 rows successfully.
+2026-06-30 18:49:09,521 INFO [flight] Loaded 3 rows successfully.
+2026-06-30 18:49:10,132 INFO [flight] Loaded 2 rows successfully.
+2026-06-30 18:49:11,610 INFO [flight] Loaded 5 rows successfully.
+2026-06-30 18:50:29,396 INFO [flight] Loaded 3 rows successfully.
+2026-06-30 18:50:29,462 INFO [flight] Loaded 2 rows successfully.
+2026-06-30 18:50:29,463 INFO [flight] Loaded 5 rows successfully.
+2026-06-30 18:56:37,648 INFO [flight] Loaded 5 rows successfully.
+2026-06-30 18:56:37,740 INFO [flight] Loaded 2 rows successfully.
+2026-06-30 18:56:37,931 INFO [flight] Loaded 3 rows successfully.
+2026-07-02 11:05:08,624 ERROR [hist_flight] Load failed: quote_from_bytes() expected bytes
+2026-07-02 11:05:13,968 ERROR [hist_flight] Load failed: quote_from_bytes() expected bytes
+2026-07-02 08:14:10,592 INFO [weather] Loaded 672 rows successfully.
+2026-07-02 08:14:10,594 INFO [weather] Loaded 672 rows successfully.
+2026-07-02 08:14:10,702 INFO [hotel] Loaded 2 rows successfully.
+2026-07-02 08:14:10,837 INFO [flight] Loaded 2 rows successfully.
+2026-07-02 08:14:10,866 INFO [flight] Loaded 2 rows successfully.
+2026-07-02 08:14:13,081 INFO [monthly_weather] Loaded 12 rows successfully.
+2026-07-02 08:14:13,123 INFO [monthly_weather] Loaded 12 rows successfully.
+2026-07-02 08:14:13,654 INFO [monthly_weather] Loaded 12 rows successfully.
+2026-07-02 08:14:16,319 INFO [flight] Loaded 2 rows successfully.
+2026-07-02 08:14:19,047 INFO [weather] Loaded 672 rows successfully.
+2026-07-02 08:14:19,286 INFO [hotel] Loaded 9 rows successfully.
+2026-07-02 08:14:24,097 INFO [hotel] Loaded 20 rows successfully.
+2026-07-02 08:15:18,229 INFO [monthly_flight] Loaded 10 rows successfully.
+2026-07-02 08:15:18,344 INFO [monthly_flight] Loaded 10 rows successfully.
+2026-07-02 08:16:10,392 INFO [monthly_flight] Loaded 10 rows successfully.
+2026-07-02 08:16:22,108 INFO [monthly_hotel] Loaded 10 rows successfully.
+2026-07-02 08:16:27,076 INFO [best_time] Loaded 12 rows successfully.
+2026-07-02 08:16:50,495 INFO [monthly_hotel] Loaded 10 rows successfully.
+2026-07-02 08:16:54,780 INFO [best_time] Loaded 12 rows successfully.
+2026-07-02 08:18:04,699 INFO [monthly_hotel] Loaded 10 rows successfully.
+2026-07-02 08:18:08,983 INFO [best_time] Loaded 12 rows successfully.
+2026-07-02 08:55:34,132 INFO [hist_flight] Loaded 1 rows successfully.
+2026-07-02 08:55:44,219 INFO [hist_flight] Loaded 1 rows successfully.
+2026-07-02 09:34:45,023 INFO [hist_flight] Loaded 1 rows successfully.
+2026-07-02 09:34:45,069 INFO [hist_flight] Loaded 1 rows successfully.
+2026-07-02 09:34:45,371 INFO [hist_flight] Loaded 1 rows successfully.
+2026-07-02 09:34:45,661 INFO [hist_flight] Loaded 1 rows successfully.
+2026-07-04 17:43:41,429 ERROR [hist_flight] Load failed: quote_from_bytes() expected bytes
+2026-07-04 17:43:46,508 ERROR [hist_flight] Load failed: quote_from_bytes() expected bytes
+2026-07-05 17:43:36,184 ERROR [hist_flight] Load failed: quote_from_bytes() expected bytes
+2026-07-05 17:43:41,243 ERROR [hist_flight] Load failed: quote_from_bytes() expected bytes
+2026-07-08 18:52:38,895 ERROR [hist_flight] Load failed: quote_from_bytes() expected bytes
+2026-07-08 18:52:48,383 ERROR [hist_flight] Load failed: quote_from_bytes() expected bytes
+2026-07-08 19:00:10,509 INFO [hist_flight] Loaded 1 rows successfully.
+2026-07-08 19:00:19,387 INFO [hist_flight] Loaded 1 rows successfully.

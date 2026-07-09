@@ -1,0 +1,32 @@
+[0m19:25:40.346812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002730F32DBD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002731133F9A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002731133FAF0>]}
+
+
+============================== 19:25:40.357685 | b942f656-c505-4b22-8c48-fc8f124146f8 ==============================
+[0m19:25:40.357685 [info ] [MainThread]: Running with dbt=1.11.12
+[0m19:25:40.359204 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m19:25:51.833228 [debug] [MainThread]: Starter project path: C:\Users\Lenovo\AppData\Local\Programs\Python\Python310\lib\site-packages\dbt\include\starter_project
+[0m19:25:51.905277 [info ] [MainThread]: 
+Your new dbt project "tour_helper_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:25:51.906280 [info ] [MainThread]: Setting up your profile.
+[0m19:26:02.279535 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:26:02.284774 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:26:02.286230 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:28:39.774627 [info ] [MainThread]: Profile tour_helper_dbt written to C:\Users\Lenovo\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m19:28:39.778697 [debug] [MainThread]: Command `dbt init` succeeded at 19:28:39.778697 after 179.65 seconds
+[0m19:28:39.780223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002730F32DBD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002731133F4C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273114103A0>]}
+[0m19:28:39.782251 [debug] [MainThread]: Flushing usage events
+[0m19:28:40.732750 [debug] [MainThread]: An error was encountered while trying to flush usage events

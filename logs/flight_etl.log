@@ -173,3 +173,161 @@
 2026-06-23 23:48:14,812 INFO Extracted 6 records.
 2026-06-23 23:48:14,812 INFO ETL complete. DataFrame shape: (6, 11)
 
+2026-06-24 18:54:59,903 INFO Fetching flight data...
+2026-06-24 18:55:05,172 INFO Flight data fetched successfully.
+2026-06-24 18:55:05,244 INFO Extracted 1 records.
+2026-06-24 18:55:05,245 INFO ETL complete. DataFrame shape: (1, 11)
+
+2026-06-24 18:55:05,368 INFO Fetching flight data...
+2026-06-24 18:55:07,667 INFO Flight data fetched successfully.
+2026-06-24 18:55:07,673 INFO Extracted 3 records.
+2026-06-24 18:55:07,673 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-06-30 18:49:06,973 INFO Fetching flight data...
+2026-06-30 18:49:06,975 INFO Fetching flight data...
+2026-06-30 18:49:07,001 INFO Fetching flight data...
+2026-06-30 18:49:09,442 INFO Flight data fetched successfully.
+2026-06-30 18:49:09,461 INFO Extracted 3 records.
+2026-06-30 18:49:09,462 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-06-30 18:49:10,088 INFO Flight data fetched successfully.
+2026-06-30 18:49:10,095 INFO Extracted 2 records.
+2026-06-30 18:49:10,096 INFO ETL complete. DataFrame shape: (2, 11)
+
+2026-06-30 18:49:11,564 INFO Flight data fetched successfully.
+2026-06-30 18:49:11,574 INFO Extracted 5 records.
+2026-06-30 18:49:11,575 INFO ETL complete. DataFrame shape: (5, 11)
+
+2026-06-30 18:50:29,246 INFO Fetching flight data...
+2026-06-30 18:50:29,302 INFO Fetching flight data...
+2026-06-30 18:50:29,313 INFO Fetching flight data...
+2026-06-30 18:50:29,340 INFO Flight data fetched successfully.
+2026-06-30 18:50:29,349 INFO Extracted 3 records.
+2026-06-30 18:50:29,350 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-06-30 18:50:29,399 INFO Flight data fetched successfully.
+2026-06-30 18:50:29,402 INFO Flight data fetched successfully.
+2026-06-30 18:50:29,410 INFO Extracted 5 records.
+2026-06-30 18:50:29,411 INFO Extracted 2 records.
+me shape: (5, 11)
+
+2026-06-30 18:50:29,412 INFO ETL complete. DataFrame shape: (2, 11)
+
+2026-06-30 18:56:37,465 INFO Fetching flight data...
+2026-06-30 18:56:37,499 INFO Fetching flight data...
+2026-06-30 18:56:37,582 INFO Flight data fetched successfully.
+2026-06-30 18:56:37,587 INFO Fetching flight data...
+2026-06-30 18:56:37,595 INFO Extracted 5 records.
+2026-06-30 18:56:37,596 INFO ETL complete. DataFrame shape: (5, 11)
+
+2026-06-30 18:56:37,681 INFO Flight data fetched successfully.
+2026-06-30 18:56:37,690 INFO Extracted 2 records.
+2026-06-30 18:56:37,692 INFO ETL complete. DataFrame shape: (2, 11)
+
+2026-06-30 18:56:37,881 INFO Flight data fetched successfully.
+2026-06-30 18:56:37,889 INFO Extracted 3 records.
+2026-06-30 18:56:37,890 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-07-02 11:04:59,545 INFO Fetching flight data...
+2026-07-02 11:05:07,661 INFO Flight data fetched successfully.
+2026-07-02 11:05:08,102 INFO Extracted 4 records.
+2026-07-02 11:05:08,102 INFO ETL complete. DataFrame shape: (4, 11)
+
+2026-07-02 11:05:08,625 INFO Fetching flight data...
+2026-07-02 11:05:13,959 INFO Flight data fetched successfully.
+2026-07-02 11:05:13,966 INFO Extracted 3 records.
+2026-07-02 11:05:13,967 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-07-02 08:14:07,872 INFO Fetching flight data...
+2026-07-02 08:14:07,953 INFO Fetching flight data...
+2026-07-02 08:14:08,022 INFO Fetching flight data...
+2026-07-02 08:14:10,614 INFO Flight data fetched successfully.
+2026-07-02 08:14:10,630 INFO Flight data fetched successfully.
+2026-07-02 08:14:10,650 INFO Extracted 2 records.
+2026-07-02 08:14:10,652 INFO ETL complete. DataFrame shape: (2, 11)
+
+2026-07-02 08:14:10,667 INFO Extracted 2 records.
+2026-07-02 08:14:10,669 INFO ETL complete. DataFrame shape: (2, 11)
+
+2026-07-02 08:14:16,171 INFO Flight data fetched successfully.
+2026-07-02 08:14:16,204 INFO Extracted 2 records.
+2026-07-02 08:14:16,207 INFO ETL complete. DataFrame shape: (2, 11)
+
+2026-07-02 08:50:49,440 INFO Fetching flight data...
+2026-07-02 08:50:53,467 ERROR Error fetching flight data: HTTPSConnectionPool(host='serpapi.com', port=443): Max retries exceeded with url: /search?engine=google_flights&departure_id=BOM&arrival_id=IXB&currency=INR&outbound_date=2026-11-19&return_date=2026-11-24&adults=1&stops=1&api_key=23f179f2bd6c4eee7dcb86a7289183a4a6afe85dffac889159a86736fc0b174d (Caused by NameResolutionError("HTTPSConnection(host='serpapi.com', port=443): Failed to resolve 'serpapi.com' ([Errno -5] No address associated with hostname)"))
+2026-07-02 08:50:53,486 INFO Fetching flight data...
+2026-07-02 08:50:57,489 ERROR Error fetching flight data: HTTPSConnectionPool(host='serpapi.com', port=443): Max retries exceeded with url: /search?engine=google_flights&departure_id=BOM&arrival_id=TRV&currency=INR&outbound_date=2026-11-19&return_date=2026-11-24&adults=1&stops=1&api_key=23f179f2bd6c4eee7dcb86a7289183a4a6afe85dffac889159a86736fc0b174d (Caused by NameResolutionError("HTTPSConnection(host='serpapi.com', port=443): Failed to resolve 'serpapi.com' ([Errno -5] No address associated with hostname)"))
+2026-07-02 08:55:28,262 INFO Fetching flight data...
+2026-07-02 08:55:34,042 INFO Flight data fetched successfully.
+2026-07-02 08:55:34,057 INFO Extracted 3 records.
+2026-07-02 08:55:34,058 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-07-02 08:55:34,141 INFO Fetching flight data...
+2026-07-02 08:55:44,181 INFO Flight data fetched successfully.
+2026-07-02 08:55:44,188 INFO Extracted 3 records.
+2026-07-02 08:55:44,190 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-07-02 09:34:44,163 INFO Fetching flight data...
+2026-07-02 09:34:44,185 INFO Fetching flight data...
+2026-07-02 09:34:44,902 INFO Flight data fetched successfully.
+2026-07-02 09:34:44,917 INFO Extracted 3 records.
+2026-07-02 09:34:44,923 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-07-02 09:34:44,994 INFO Flight data fetched successfully.
+2026-07-02 09:34:45,009 INFO Extracted 3 records.
+2026-07-02 09:34:45,010 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-07-02 09:34:45,032 INFO Fetching flight data...
+2026-07-02 09:34:45,078 INFO Fetching flight data...
+2026-07-02 09:34:45,336 INFO Flight data fetched successfully.
+2026-07-02 09:34:45,343 INFO Extracted 3 records.
+2026-07-02 09:34:45,344 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-07-02 09:34:45,630 INFO Flight data fetched successfully.
+2026-07-02 09:34:45,637 INFO Extracted 3 records.
+2026-07-02 09:34:45,638 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-07-04 17:43:36,989 INFO Fetching flight data...
+2026-07-04 17:43:41,388 INFO Flight data fetched successfully.
+2026-07-04 17:43:41,421 INFO Extracted 4 records.
+2026-07-04 17:43:41,421 INFO ETL complete. DataFrame shape: (4, 11)
+
+2026-07-04 17:43:41,434 INFO Fetching flight data...
+2026-07-04 17:43:46,501 INFO Flight data fetched successfully.
+2026-07-04 17:43:46,508 INFO Extracted 3 records.
+2026-07-04 17:43:46,508 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-07-05 17:43:34,083 INFO Fetching flight data...
+2026-07-05 17:43:36,165 INFO Flight data fetched successfully.
+2026-07-05 17:43:36,181 INFO Extracted 4 records.
+2026-07-05 17:43:36,181 INFO ETL complete. DataFrame shape: (4, 11)
+
+2026-07-05 17:43:36,186 INFO Fetching flight data...
+2026-07-05 17:43:41,236 INFO Flight data fetched successfully.
+2026-07-05 17:43:41,242 INFO Extracted 3 records.
+2026-07-05 17:43:41,242 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-07-07 09:43:18,366 INFO Fetching flight data...
+2026-07-07 09:43:18,470 ERROR Error fetching flight data: HTTPSConnectionPool(host='serpapi.com', port=443): Max retries exceeded with url: /search?engine=google_flights&departure_id=BOM&arrival_id=IXB&currency=INR&outbound_date=2026-11-19&return_date=2026-11-24&adults=1&stops=1&api_key=23f179f2bd6c4eee7dcb86a7289183a4a6afe85dffac889159a86736fc0b174d (Caused by NameResolutionError("HTTPSConnection(host='serpapi.com', port=443): Failed to resolve 'serpapi.com' ([Errno -2] Name or service not known)"))
+2026-07-07 09:43:18,501 INFO Fetching flight data...
+2026-07-07 09:43:18,509 ERROR Error fetching flight data: HTTPSConnectionPool(host='serpapi.com', port=443): Max retries exceeded with url: /search?engine=google_flights&departure_id=BOM&arrival_id=TRV&currency=INR&outbound_date=2026-11-19&return_date=2026-11-24&adults=1&stops=1&api_key=23f179f2bd6c4eee7dcb86a7289183a4a6afe85dffac889159a86736fc0b174d (Caused by NameResolutionError("HTTPSConnection(host='serpapi.com', port=443): Failed to resolve 'serpapi.com' ([Errno -2] Name or service not known)"))
+2026-07-08 18:52:32,292 INFO Fetching flight data...
+2026-07-08 18:52:38,590 INFO Flight data fetched successfully.
+2026-07-08 18:52:38,785 INFO Extracted 4 records.
+2026-07-08 18:52:38,786 INFO ETL complete. DataFrame shape: (4, 11)
+
+2026-07-08 18:52:38,901 INFO Fetching flight data...
+2026-07-08 18:52:48,367 INFO Flight data fetched successfully.
+2026-07-08 18:52:48,381 INFO Extracted 3 records.
+2026-07-08 18:52:48,381 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-07-08 19:00:06,579 INFO Fetching flight data...
+2026-07-08 19:00:09,859 INFO Flight data fetched successfully.
+2026-07-08 19:00:09,934 INFO Extracted 2 records.
+2026-07-08 19:00:09,937 INFO ETL complete. DataFrame shape: (2, 11)
+
+2026-07-08 19:00:10,538 INFO Fetching flight data...
+2026-07-08 19:00:19,262 INFO Flight data fetched successfully.
+2026-07-08 19:00:19,286 INFO Extracted 3 records.
+2026-07-08 19:00:19,289 INFO ETL complete. DataFrame shape: (3, 11)
+

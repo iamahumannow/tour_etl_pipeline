@@ -17,3 +17,48 @@
 2026-06-10 17:41:52,201 INFO Pipeline started.
 2026-06-10 17:41:53,390 INFO Pipeline complete.
 
+2026-06-24 18:54:59,900 INFO Pipeline started.
+2026-06-24 18:55:07,726 INFO Pipeline complete.
+
+2026-07-02 11:04:59,503 INFO Pipeline started.
+2026-07-02 11:05:08,624 ERROR Monthly flight pricing failed for Sikkim: quote_from_bytes() expected bytes
+2026-07-02 11:05:13,968 ERROR Monthly flight pricing failed for Varkala: quote_from_bytes() expected bytes
+2026-07-02 11:05:13,968 INFO Pipeline complete.
+
+2026-07-02 08:50:49,431 INFO Pipeline started.
+2026-07-02 08:50:53,477 ERROR Monthly flight pricing failed for Sikkim: 'NoneType' object is not iterable
+2026-07-02 08:50:57,492 ERROR Monthly flight pricing failed for Varkala: 'NoneType' object is not iterable
+2026-07-02 08:50:57,493 INFO Pipeline complete.
+
+2026-07-02 08:55:28,249 INFO Pipeline started.
+2026-07-02 08:55:44,220 INFO Pipeline complete.
+
+2026-07-02 09:34:44,155 INFO Pipeline started.
+2026-07-02 09:34:44,173 INFO Pipeline started.
+2026-07-02 09:34:45,372 INFO Pipeline complete.
+
+2026-07-02 09:34:45,662 INFO Pipeline complete.
+
+2026-07-04 17:43:36,987 INFO Pipeline started.
+2026-07-04 17:43:41,431 ERROR Monthly flight pricing failed for Sikkim: quote_from_bytes() expected bytes
+2026-07-04 17:43:46,508 ERROR Monthly flight pricing failed for Varkala: quote_from_bytes() expected bytes
+2026-07-04 17:43:46,508 INFO Pipeline complete.
+
+2026-07-05 17:43:34,081 INFO Pipeline started.
+2026-07-05 17:43:36,184 ERROR Monthly flight pricing failed for Sikkim: quote_from_bytes() expected bytes
+2026-07-05 17:43:41,244 ERROR Monthly flight pricing failed for Varkala: quote_from_bytes() expected bytes
+2026-07-05 17:43:41,244 INFO Pipeline complete.
+
+2026-07-07 09:43:18,350 INFO Pipeline started.
+2026-07-07 09:43:18,490 ERROR Monthly flight pricing failed for Sikkim: 'NoneType' object is not iterable
+2026-07-07 09:43:18,511 ERROR Monthly flight pricing failed for Varkala: 'NoneType' object is not iterable
+2026-07-07 09:43:18,513 INFO Pipeline complete.
+
+2026-07-08 18:52:32,286 INFO Pipeline started.
+2026-07-08 18:52:38,896 ERROR Monthly flight pricing failed for Sikkim: quote_from_bytes() expected bytes
+2026-07-08 18:52:48,384 ERROR Monthly flight pricing failed for Varkala: quote_from_bytes() expected bytes
+2026-07-08 18:52:48,384 INFO Pipeline complete.
+
+2026-07-08 19:00:06,551 INFO Pipeline started.
+2026-07-08 19:00:19,390 INFO Pipeline complete.
+
