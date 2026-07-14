@@ -331,3 +331,17 @@ me shape: (5, 11)
 2026-07-08 19:00:19,286 INFO Extracted 3 records.
 2026-07-08 19:00:19,289 INFO ETL complete. DataFrame shape: (3, 11)
 
+2026-07-11 18:12:21,157 INFO Fetching flight data...
+2026-07-11 18:12:21,157 ERROR Error fetching flight data: HTTPSConnectionPool(host='serpapi.com', port=443): Max retries exceeded with url: /search?engine=google_flights&departure_id=BOM&arrival_id=IXB&currency=INR&outbound_date=2026-11-19&return_date=2026-11-24&adults=1&stops=1&api_key=23f179f2bd6c4eee7dcb86a7289183a4a6afe85dffac889159a86736fc0b174d (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027AAFE15780>: Failed to resolve 'serpapi.com' ([Errno 11001] getaddrinfo failed)"))
+2026-07-11 18:12:21,174 INFO Fetching flight data...
+2026-07-11 18:12:21,176 ERROR Error fetching flight data: HTTPSConnectionPool(host='serpapi.com', port=443): Max retries exceeded with url: /search?engine=google_flights&departure_id=BOM&arrival_id=TRV&currency=INR&outbound_date=2026-11-19&return_date=2026-11-24&adults=1&stops=1&api_key=23f179f2bd6c4eee7dcb86a7289183a4a6afe85dffac889159a86736fc0b174d (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027AAFE68A90>: Failed to resolve 'serpapi.com' ([Errno 11001] getaddrinfo failed)"))
+2026-07-12 17:43:36,716 INFO Fetching flight data...
+2026-07-12 17:43:42,821 INFO Flight data fetched successfully.
+2026-07-12 17:43:42,849 INFO Extracted 3 records.
+2026-07-12 17:43:42,849 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-07-12 17:43:47,668 INFO Fetching flight data...
+2026-07-12 17:43:52,484 INFO Flight data fetched successfully.
+2026-07-12 17:43:52,489 INFO Extracted 3 records.
+2026-07-12 17:43:52,489 INFO ETL complete. DataFrame shape: (3, 11)
+

@@ -217,3 +217,7 @@
 2026-07-08 18:52:48,383 ERROR [hist_flight] Load failed: quote_from_bytes() expected bytes
 2026-07-08 19:00:10,509 INFO [hist_flight] Loaded 1 rows successfully.
 2026-07-08 19:00:19,387 INFO [hist_flight] Loaded 1 rows successfully.
+2026-07-12 17:43:47,666 ERROR [hist_flight] Load failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-12 17:43:56,587 ERROR [hist_flight] Load failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)

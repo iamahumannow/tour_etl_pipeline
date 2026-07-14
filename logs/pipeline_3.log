@@ -62,3 +62,15 @@
 2026-07-08 19:00:06,551 INFO Pipeline started.
 2026-07-08 19:00:19,390 INFO Pipeline complete.
 
+2026-07-11 18:12:21,154 INFO Pipeline started.
+2026-07-11 18:12:21,170 ERROR Monthly flight pricing failed for Sikkim: 'NoneType' object is not iterable
+2026-07-11 18:12:21,176 ERROR Monthly flight pricing failed for Varkala: 'NoneType' object is not iterable
+2026-07-11 18:12:21,176 INFO Pipeline complete.
+
+2026-07-12 17:43:36,712 INFO Pipeline started.
+2026-07-12 17:43:47,666 ERROR Monthly flight pricing failed for Sikkim: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-12 17:43:56,601 ERROR Monthly flight pricing failed for Varkala: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-12 17:43:56,601 INFO Pipeline complete.
+

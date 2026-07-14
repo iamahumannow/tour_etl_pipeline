@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: raw
+    database: DEV_DB
+    schema: RAW
+    tables:
+      - name: weather
+      - name: monthly_weather
+      - name: flight
+      - name: monthly_flight
+      - name: hotel
+      - name: monthly_hotel
+      - name: hist_flight
