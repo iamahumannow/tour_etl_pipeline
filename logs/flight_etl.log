@@ -345,3 +345,13 @@ me shape: (5, 11)
 2026-07-12 17:43:52,489 INFO Extracted 3 records.
 2026-07-12 17:43:52,489 INFO ETL complete. DataFrame shape: (3, 11)
 
+2026-07-15 17:43:34,170 INFO Fetching flight data...
+2026-07-15 17:43:38,791 INFO Flight data fetched successfully.
+2026-07-15 17:43:38,806 INFO Extracted 3 records.
+2026-07-15 17:43:38,806 INFO ETL complete. DataFrame shape: (3, 11)
+
+2026-07-15 17:43:39,767 INFO Fetching flight data...
+2026-07-15 17:43:43,970 INFO Flight data fetched successfully.
+2026-07-15 17:43:43,978 INFO Extracted 3 records.
+2026-07-15 17:43:43,978 INFO ETL complete. DataFrame shape: (3, 11)
+

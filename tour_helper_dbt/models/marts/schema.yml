@@ -1,0 +1,113 @@
+version: 2
+
+models:
+  - name: mart_best_time
+    description: "Composite scoring model ranking the best month to visit each destination based on weather and price data."
+    columns:
+      - name: location
+        description: "Name of the travel destination"
+        tests:
+          - not_null
+
+      - name: months
+        description: "Months from Jan to Dec"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['January', 'February', 'March', 'April', 'May', 'June',
+                       'July', 'August', 'September', 'October', 'November', 'December']
+
+      - name: avg_temp
+        description: "Average temperature above 2m for the month in celsius"
+        tests:
+          - not_null
+      
+      - name: avg_temp_min
+        description: "Average minimum temperature above 2m for the month in celsius"
+        tests:
+          - not_null
+
+      - name: avg_rain
+        description: "Average precipitation for the month in mm"
+        tests:
+          - not_null
+
+      - name: avg_sunshine
+        description: "Average sunshine duration for the month in hours"
+        tests:
+          - not_null
+
+      - name: avg_flight_price
+        description: "Average lowest flight price for the month in INR — imputed if source data missing"
+        tests:
+          - not_null
+
+      - name: avg_hotel_price
+        description: "Average hotel price per night for the month in INR — imputed if source data missing"
+        tests:
+          - not_null
+
+      - name: temp_score
+        description: "Normalised temperature score 0-1, lower is better"
+        tests:
+          - not_null
+
+      - name: temp_min_score
+        description: "Normalised minimum temperature score 0-1, lower is better"
+        tests:
+          - not_null
+
+      - name: rain_score
+        description: "Normalised rain score 0-1, higher means less rain"
+        tests:
+          - not_null
+
+      - name: sunshine_score
+        description: "Normalised sunshine score 0-1, higher is better"
+        tests:
+          - not_null
+
+      - name: flight_price_score
+        description: "Normalised flight price score 0-1, higher means cheaper"
+        tests:
+          - not_null
+
+      - name: hotel_price_score
+        description: "Normalised hotel price score 0-1, higher means cheaper"
+        tests:
+          - not_null
+
+      - name: overall_score
+        description: "Weighted composite score 0-1. Weather 55%, price 45%"
+        tests:
+          - not_null
+
+      - name: best_time_rank
+        description: "Rank of this month for this destination. 1 = best month to visit"
+        tests:
+          - not_null
+
+  - name: mart_hist_flight
+    description: "Weekly historical flight price tracking with trend signals per destination."
+    columns:
+      - name: fetch_date
+        description: "Date the price was fetched"
+        tests:
+          - not_null
+
+      - name: location
+        description: "Name of the travel destination"
+        tests:
+          - not_null
+
+      - name: flight_price
+        description: "Lowest flight price in INR on the fetch date"
+        tests:
+          - not_null
+
+      - name: price_signal
+        description: "Recommendation signal based on price vs destination average"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Book Now', 'Wait', 'Neutral']

@@ -221,3 +221,5 @@
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
 2026-07-12 17:43:56,587 ERROR [hist_flight] Load failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-15 17:43:39,764 INFO [hist_flight] Loaded 1 rows successfully.
+2026-07-15 17:43:44,011 INFO [hist_flight] Loaded 1 rows successfully.

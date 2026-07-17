@@ -111,7 +111,7 @@ final_data as (
         round(hotel_price_score,2) as hotel_price_score,
         overall_score,
 
-        dense_rank() over (
+        row_number() over (
             order by overall_score desc
         ) as best_time_rank
 
