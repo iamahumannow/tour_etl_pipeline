@@ -115,3 +115,70 @@
 2026-07-02 08:14:13,527 INFO Weather data extracted successfully for Munnar, Devikulam, Idukki, Kerala, 685612, India
 2026-07-02 08:14:13,532 INFO Cleaning weather data for Munnar
 2026-07-02 08:14:13,557 INFO Cleaning completed successfully for Munnar
+2026-07-21 10:28:50,002 INFO Extracting weather data for Manali, Kullu, Himachal Pradesh, 175131, India
+2026-07-21 10:28:50,011 INFO Extracting weather data for Munnar, Devikulam, Idukki, Kerala, 685612, India
+2026-07-21 10:28:52,359 INFO Weather data extracted successfully for Sikkim, India
+ Himachal Pradesh, 175131, India
+a
+2026-07-21 10:28:52,364 INFO Cleaning weather data for Munnar
+2026-07-21 10:28:52,455 INFO Cleaning completed successfully for Manali
+2026-07-21 10:28:52,465 INFO Cleaning completed successfully for Munnar
+2026-07-21 10:30:44,958 INFO Extracting weather data for Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-21 10:30:45,001 INFO Extracting weather data for Kodagu, Karnataka, India
+2026-07-21 10:30:45,041 INFO Extracting weather data for Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-21 10:30:45,961 INFO Weather data extracted successfully for Kodagu, Karnataka, India
+2026-07-21 10:30:45,966 INFO Cleaning weather data for Coorg
+2026-07-21 10:30:46,039 INFO Cleaning completed successfully for Coorg
+2026-07-21 10:30:46,117 INFO Weather data extracted successfully for Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-21 10:30:46,123 INFO Weather data extracted successfully for Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-21 10:30:46,128 INFO Cleaning weather data for Shillong
+2026-07-21 10:30:46,184 INFO Cleaning completed successfully for Ooty
+2026-07-21 10:30:46,196 INFO Cleaning completed successfully for Shillong
+2026-07-22 12:00:05,639 INFO Extracting weather data for Kodagu, Karnataka, India
+2026-07-22 12:00:06,112 INFO Extracting weather data for Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-22 12:00:06,176 INFO Extracting weather data for Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-22 12:00:07,062 INFO Weather data extracted successfully for Kodagu, Karnataka, India
+2026-07-22 12:00:07,065 INFO Cleaning weather data for Coorg
+2026-07-22 12:00:07,190 INFO Cleaning completed successfully for Coorg
+2026-07-22 12:00:07,495 INFO Weather data extracted successfully for Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-22 12:00:07,498 INFO Cleaning weather data for Ooty
+2026-07-22 12:00:07,504 INFO Weather data extracted successfully for Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-22 12:00:07,508 INFO Cleaning weather data for Shillong
+2026-07-22 12:00:07,526 INFO Cleaning completed successfully for Ooty
+2026-07-22 12:00:07,542 INFO Cleaning completed successfully for Shillong
+2026-07-22 12:25:55,260 INFO Extracting weather data for Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-22 12:25:55,958 INFO Extracting weather data for Kodagu, Karnataka, India
+2026-07-22 12:25:55,962 INFO Weather data extracted successfully for Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-22 12:25:55,966 INFO Cleaning weather data for Ooty
+2026-07-22 12:25:56,012 INFO Cleaning completed successfully for Ooty
+2026-07-22 12:25:56,041 INFO Extracting weather data for Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-22 12:25:56,595 INFO Weather data extracted successfully for Kodagu, Karnataka, India
+2026-07-22 12:25:56,599 INFO Cleaning weather data for Coorg
+2026-07-22 12:25:56,633 INFO Cleaning completed successfully for Coorg
+2026-07-22 12:25:56,653 INFO Weather data extracted successfully for Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-22 12:25:56,657 INFO Cleaning weather data for Shillong
+2026-07-22 12:25:56,688 INFO Cleaning completed successfully for Shillong
+2026-07-23 09:44:27,400 INFO Extracting weather data for Kodagu, Karnataka, India
+2026-07-23 09:44:30,269 INFO Weather data extracted successfully for Kodagu, Karnataka, India
+2026-07-23 09:44:30,271 INFO Cleaning weather data for Coorg
+2026-07-23 09:44:30,308 INFO Cleaning completed successfully for Coorg
+2026-07-31 06:37:31,012 INFO Extracting weather data for Sikkim, India
+2026-07-31 06:37:37,569 INFO Weather data extracted successfully for Sikkim, India
+2026-07-31 06:37:37,571 INFO Cleaning weather data for Sikkim
+2026-07-31 06:37:37,603 INFO Cleaning completed successfully for Sikkim
+2026-07-31 06:42:47,780 INFO Extracting weather data for Sikkim, India
+2026-07-31 06:42:49,188 INFO Weather data extracted successfully for Sikkim, India
+2026-07-31 06:42:49,191 INFO Cleaning weather data for Sikkim
+2026-07-31 06:42:49,203 INFO Cleaning completed successfully for Sikkim
+2026-07-31 06:53:13,939 INFO Extracting weather data for Munnar, Devikulam, Idukki, Kerala, 685612, India
+2026-07-31 06:53:14,305 INFO Extracting weather data for Manali, Kullu, Himachal Pradesh, 175131, India
+2026-07-31 06:53:14,407 INFO Extracting weather data for Sikkim, India
+2026-07-31 06:53:14,902 INFO Weather data extracted successfully for Munnar, Devikulam, Idukki, Kerala, 685612, India
+2026-07-31 06:53:14,907 INFO Cleaning weather data for Munnar
+2026-07-31 06:53:14,947 INFO Cleaning completed successfully for Munnar
+2026-07-31 06:53:17,586 INFO Weather data extracted successfully for Manali, Kullu, Himachal Pradesh, 175131, India
+2026-07-31 06:53:17,590 INFO Cleaning weather data for Manali
+2026-07-31 06:53:17,612 INFO Weather data extracted successfully for Sikkim, India
+2026-07-31 06:53:17,617 INFO Cleaning weather data for Sikkim
+2026-07-31 06:53:17,637 INFO Cleaning completed successfully for Manali
+2026-07-31 06:53:17,658 INFO Cleaning completed successfully for Sikkim

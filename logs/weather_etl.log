@@ -191,3 +191,219 @@
 2026-07-02 08:14:18,899 INFO Extracted 672 records.
 2026-07-02 08:14:18,901 INFO ETL complete. DataFrame shape: (672, 8)
 
+2026-07-21 10:28:50,002 INFO Fetching weather data for location: Sikkim, India
+2026-07-21 10:28:50,003 INFO Fetching weather data for location: Manali, Kullu, Himachal Pradesh, 175131, India
+2026-07-21 10:28:51,296 INFO Weather data fetched successfully for Manali, Kullu, Himachal Pradesh, 175131, India
+2026-07-21 10:28:51,385 INFO Extracted 672 records.
+2026-07-21 10:28:51,387 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-21 10:29:02,010 INFO Fetching weather data for location: Munnar, Devikulam, Idukki, Kerala, 685612, India
+2026-07-21 10:29:02,832 INFO Weather data fetched successfully for Munnar, Devikulam, Idukki, Kerala, 685612, India
+2026-07-21 10:29:02,848 INFO Extracted 672 records.
+2026-07-21 10:29:02,849 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-21 10:30:44,992 INFO Fetching weather data for location: Kodagu, Karnataka, India
+2026-07-21 10:30:45,096 INFO Fetching weather data for location: Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-21 10:30:45,796 INFO Weather data fetched successfully for Kodagu, Karnataka, India
+2026-07-21 10:30:45,831 INFO Extracted 672 records.
+2026-07-21 10:30:45,833 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-21 10:30:45,880 INFO Weather data fetched successfully for Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-21 10:30:45,906 INFO Extracted 672 records.
+2026-07-21 10:30:45,907 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-21 10:30:52,551 INFO Fetching weather data for location: Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-21 10:30:53,332 INFO Weather data fetched successfully for Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-21 10:30:53,340 INFO Extracted 672 records.
+2026-07-21 10:30:53,341 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-22 12:00:06,189 INFO Fetching weather data for location: Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-22 12:00:07,607 INFO Weather data fetched successfully for Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-22 12:00:07,625 INFO Extracted 672 records.
+2026-07-22 12:00:07,627 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-22 12:00:27,915 INFO Fetching weather data for location: Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-22 12:00:28,503 INFO Weather data fetched successfully for Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-22 12:00:28,515 INFO Extracted 672 records.
+2026-07-22 12:00:28,517 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-22 12:00:29,403 INFO Fetching weather data for location: Kodagu, Karnataka, India
+2026-07-22 12:00:30,038 INFO Weather data fetched successfully for Kodagu, Karnataka, India
+2026-07-22 12:00:30,048 INFO Extracted 672 records.
+2026-07-22 12:00:30,049 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-22 12:25:55,918 INFO Fetching weather data for location: Kodagu, Karnataka, India
+2026-07-22 12:25:56,532 INFO Weather data fetched successfully for Kodagu, Karnataka, India
+2026-07-22 12:25:56,557 INFO Extracted 672 records.
+2026-07-22 12:25:56,558 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-22 12:26:01,628 INFO Fetching weather data for location: Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-22 12:26:01,878 INFO Fetching weather data for location: Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-22 12:26:02,195 INFO Weather data fetched successfully for Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-22 12:26:02,206 INFO Extracted 672 records.
+2026-07-22 12:26:02,208 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-22 12:26:02,427 INFO Weather data fetched successfully for Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-22 12:26:02,436 INFO Extracted 672 records.
+2026-07-22 12:26:02,438 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-23 06:51:14,577 INFO Fetching weather data for location: Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-23 06:51:14,900 INFO Fetching weather data for location: Kodagu, Karnataka, India
+2026-07-23 06:51:15,196 INFO Fetching weather data for location: Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-23 06:51:15,845 INFO Weather data fetched successfully for Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-23 06:51:15,873 INFO Extracted 672 records.
+2026-07-23 06:51:15,875 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-23 06:51:15,920 INFO Weather data fetched successfully for Kodagu, Karnataka, India
+2026-07-23 06:51:15,932 INFO Extracted 672 records.
+2026-07-23 06:51:15,933 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-23 06:51:16,149 INFO Weather data fetched successfully for Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-23 06:51:16,162 INFO Extracted 672 records.
+2026-07-23 06:51:16,164 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-23 06:59:43,047 INFO Fetching weather data for location: Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-23 06:59:43,092 INFO Fetching weather data for location: Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-23 06:59:43,894 INFO Fetching weather data for location: Kodagu, Karnataka, India
+2026-07-23 06:59:44,048 INFO Weather data fetched successfully for Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-23 06:59:44,061 INFO Extracted 672 records.
+2026-07-23 06:59:44,063 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-23 06:59:44,106 INFO Weather data fetched successfully for Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-23 06:59:44,120 INFO Extracted 672 records.
+2026-07-23 06:59:44,122 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-23 06:59:44,893 INFO Weather data fetched successfully for Kodagu, Karnataka, India
+2026-07-23 06:59:44,905 INFO Extracted 672 records.
+2026-07-23 06:59:44,906 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-23 07:09:21,034 INFO Fetching weather data for location: Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-23 07:09:21,086 INFO Fetching weather data for location: Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-23 07:09:22,012 INFO Weather data fetched successfully for Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-23 07:09:22,025 INFO Extracted 672 records.
+2026-07-23 07:09:22,026 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-23 07:09:22,062 INFO Weather data fetched successfully for Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-23 07:09:22,075 INFO Extracted 672 records.
+2026-07-23 07:09:22,076 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-23 07:12:49,525 INFO Fetching weather data for location: Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-23 07:12:49,528 INFO Fetching weather data for location: Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-23 07:12:49,603 INFO Fetching weather data for location: Kodagu, Karnataka, India
+2026-07-23 07:12:50,440 INFO Weather data fetched successfully for Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-23 07:12:50,452 INFO Extracted 672 records.
+2026-07-23 07:12:50,453 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-23 07:12:50,521 INFO Weather data fetched successfully for Kodagu, Karnataka, India
+2026-07-23 07:12:50,531 INFO Extracted 672 records.
+2026-07-23 07:12:50,532 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-23 07:12:50,558 INFO Weather data fetched successfully for Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-23 07:12:50,570 INFO Extracted 672 records.
+2026-07-23 07:12:50,571 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-23 07:15:32,725 INFO Fetching weather data for location: Sikkim, India
+2026-07-23 07:15:33,746 INFO Weather data fetched successfully for Sikkim, India
+2026-07-23 07:15:33,759 INFO Extracted 672 records.
+2026-07-23 07:15:33,761 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-23 07:31:45,698 INFO Fetching weather data for location: Sikkim, India
+2026-07-23 07:31:48,648 INFO Weather data fetched successfully for Sikkim, India
+2026-07-23 07:31:48,664 INFO Extracted 672 records.
+2026-07-23 07:31:48,666 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-23 07:38:55,760 INFO Fetching weather data for location: Sikkim, India
+2026-07-23 07:38:59,665 INFO Weather data fetched successfully for Sikkim, India
+2026-07-23 07:38:59,674 INFO Extracted 672 records.
+2026-07-23 07:38:59,675 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-23 07:40:11,071 INFO Fetching weather data for location: Sikkim, India
+2026-07-23 07:40:12,791 INFO Weather data fetched successfully for Sikkim, India
+2026-07-23 07:40:12,803 INFO Extracted 672 records.
+2026-07-23 07:40:12,805 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-23 07:47:21,993 INFO Fetching weather data for location: Sikkim, India
+2026-07-23 07:47:22,912 INFO Weather data fetched successfully for Sikkim, India
+2026-07-23 07:47:22,922 INFO Extracted 672 records.
+2026-07-23 07:47:22,923 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-23 09:32:13,285 INFO Fetching weather data for location: Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-23 09:32:13,987 INFO Fetching weather data for location: Kodagu, Karnataka, India
+2026-07-23 09:32:14,129 INFO Fetching weather data for location: Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-23 09:32:14,423 INFO Weather data fetched successfully for Shillong, Mylliem, East Khasi Hills, Meghalaya, 793001, India
+2026-07-23 09:32:14,448 INFO Extracted 672 records.
+2026-07-23 09:32:14,449 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-23 09:32:14,854 INFO Weather data fetched successfully for Kodagu, Karnataka, India
+2026-07-23 09:32:14,865 INFO Extracted 672 records.
+2026-07-23 09:32:14,866 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-23 09:32:15,111 INFO Weather data fetched successfully for Udhagamandalam, Nilgiris, Tamil Nadu, 643001, India
+2026-07-23 09:32:15,122 INFO Extracted 672 records.
+2026-07-23 09:32:15,124 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-23 09:59:28,482 INFO Fetching weather data for location: Sikkim, India
+2026-07-23 09:59:29,480 INFO Weather data fetched successfully for Sikkim, India
+2026-07-23 09:59:29,490 INFO Extracted 672 records.
+2026-07-23 09:59:29,491 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-31 05:58:50,344 INFO Fetching weather data for location: Sikkim, India
+2026-07-31 05:58:51,169 INFO Weather data fetched successfully for Sikkim, India
+2026-07-31 05:58:51,179 INFO Extracted 672 records.
+2026-07-31 05:58:51,180 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-31 06:05:28,718 INFO Fetching weather data for location: Sikkim, India
+2026-07-31 06:05:29,721 INFO Weather data fetched successfully for Sikkim, India
+2026-07-31 06:05:29,736 INFO Extracted 672 records.
+2026-07-31 06:05:29,737 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-31 06:11:11,019 INFO Fetching weather data for location: Sikkim, India
+2026-07-31 06:11:11,871 INFO Weather data fetched successfully for Sikkim, India
+2026-07-31 06:11:11,880 INFO Extracted 672 records.
+2026-07-31 06:11:11,881 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-31 06:12:28,331 INFO Fetching weather data for location: Sikkim, India
+2026-07-31 06:12:29,146 INFO Weather data fetched successfully for Sikkim, India
+2026-07-31 06:12:29,155 INFO Extracted 672 records.
+2026-07-31 06:12:29,156 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-31 06:14:16,737 INFO Fetching weather data for location: Sikkim, India
+2026-07-31 06:14:17,588 INFO Weather data fetched successfully for Sikkim, India
+2026-07-31 06:14:17,595 INFO Extracted 672 records.
+2026-07-31 06:14:17,596 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-31 06:14:41,341 INFO Fetching weather data for location: Sikkim, India
+2026-07-31 06:14:42,161 INFO Weather data fetched successfully for Sikkim, India
+2026-07-31 06:14:42,171 INFO Extracted 672 records.
+2026-07-31 06:14:42,172 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-31 06:17:26,519 INFO Fetching weather data for location: Sikkim, India
+2026-07-31 06:17:27,756 INFO Weather data fetched successfully for Sikkim, India
+2026-07-31 06:17:27,765 INFO Extracted 672 records.
+2026-07-31 06:17:27,766 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-31 06:37:31,011 INFO Fetching weather data for location: Sikkim, India
+2026-07-31 06:37:33,065 INFO Weather data fetched successfully for Sikkim, India
+2026-07-31 06:37:33,085 INFO Extracted 672 records.
+2026-07-31 06:37:33,087 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-31 06:42:47,780 INFO Fetching weather data for location: Sikkim, India
+2026-07-31 06:42:48,689 INFO Weather data fetched successfully for Sikkim, India
+2026-07-31 06:42:48,698 INFO Extracted 672 records.
+2026-07-31 06:42:48,699 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-31 06:53:14,186 INFO Fetching weather data for location: Manali, Kullu, Himachal Pradesh, 175131, India
+2026-07-31 06:53:15,037 INFO Weather data fetched successfully for Manali, Kullu, Himachal Pradesh, 175131, India
+2026-07-31 06:53:15,063 INFO Extracted 672 records.
+2026-07-31 06:53:15,064 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-31 06:53:23,312 INFO Fetching weather data for location: Sikkim, India
+2026-07-31 06:53:24,282 INFO Weather data fetched successfully for Sikkim, India
+2026-07-31 06:53:24,293 INFO Extracted 672 records.
+2026-07-31 06:53:24,294 INFO ETL complete. DataFrame shape: (672, 8)
+
+2026-07-31 06:53:27,842 INFO Fetching weather data for location: Munnar, Devikulam, Idukki, Kerala, 685612, India
+2026-07-31 06:53:28,647 INFO Weather data fetched successfully for Munnar, Devikulam, Idukki, Kerala, 685612, India
+2026-07-31 06:53:28,656 INFO Extracted 672 records.
+2026-07-31 06:53:28,657 INFO ETL complete. DataFrame shape: (672, 8)
+

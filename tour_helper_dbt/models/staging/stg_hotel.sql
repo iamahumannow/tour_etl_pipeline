@@ -4,7 +4,6 @@ with source as(
 
 renamed as (
     select
-        hotel_id,
         name,
         stay_type,
         rating,

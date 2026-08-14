@@ -204,3 +204,103 @@
 2026-07-02 08:14:24,017 INFO Extracted 20 records.
 2026-07-02 08:14:24,019 INFO ETL complete. DataFrame shape: (20, 11)
 
+2026-07-21 10:28:49,090 INFO Fetching hotel data for Munnar...
+2026-07-21 10:28:49,107 INFO Fetching hotel data for Sikkim...
+2026-07-21 10:28:51,834 INFO Hotel data fetched successfully.
+2026-07-21 10:28:51,888 INFO Extracted 6 records.
+2026-07-21 10:28:51,889 INFO ETL complete. DataFrame shape: (6, 11)
+
+2026-07-21 10:28:52,394 INFO Hotel data fetched successfully.
+2026-07-21 10:28:52,536 INFO Extracted 20 records.
+2026-07-21 10:28:52,538 INFO ETL complete. DataFrame shape: (20, 11)
+
+2026-07-21 10:29:01,836 INFO Fetching hotel data for Manali...
+2026-07-21 10:29:04,818 INFO Hotel data fetched successfully.
+2026-07-21 10:29:04,836 INFO Extracted 6 records.
+2026-07-21 10:29:04,837 INFO ETL complete. DataFrame shape: (6, 11)
+
+2026-07-21 10:30:44,436 INFO Fetching hotel data for Shillong...
+2026-07-21 10:30:44,925 INFO Fetching hotel data for Ooty...
+2026-07-21 10:30:46,412 INFO Hotel data fetched successfully.
+2026-07-21 10:30:46,454 INFO Extracted 5 records.
+2026-07-21 10:30:46,456 INFO ETL complete. DataFrame shape: (5, 11)
+
+2026-07-21 10:30:47,299 INFO Hotel data fetched successfully.
+2026-07-21 10:30:47,424 INFO Extracted 20 records.
+2026-07-21 10:30:47,427 INFO ETL complete. DataFrame shape: (20, 11)
+
+2026-07-21 10:30:52,484 INFO Fetching hotel data for Coorg...
+2026-07-21 10:30:54,714 INFO Hotel data fetched successfully.
+2026-07-21 10:30:54,719 INFO Extracted 0 records.
+2026-07-21 10:30:54,720 INFO ETL complete. DataFrame shape: (0, 4)
+
+2026-07-22 12:00:04,813 INFO Fetching hotel data for Coorg...
+2026-07-22 12:00:04,836 INFO Fetching hotel data for Ooty...
+2026-07-22 12:00:04,874 INFO Fetching hotel data for Shillong...
+2026-07-22 12:00:07,881 INFO Hotel data fetched successfully.
+2026-07-22 12:00:07,922 INFO Extracted 5 records.
+2026-07-22 12:00:07,923 INFO ETL complete. DataFrame shape: (5, 11)
+
+2026-07-22 12:00:08,074 INFO Hotel data fetched successfully.
+2026-07-22 12:00:08,099 INFO Extracted 0 records.
+2026-07-22 12:00:08,101 INFO ETL complete. DataFrame shape: (0, 4)
+
+2026-07-22 12:00:12,447 INFO Hotel data fetched successfully.
+2026-07-22 12:00:12,521 INFO Extracted 20 records.
+2026-07-22 12:00:12,522 INFO ETL complete. DataFrame shape: (20, 11)
+
+2026-07-22 12:25:55,203 INFO Fetching hotel data for Ooty...
+2026-07-22 12:25:55,340 INFO Fetching hotel data for Coorg...
+2026-07-22 12:25:55,540 INFO Hotel data fetched successfully.
+2026-07-22 12:25:55,560 INFO Extracted 0 records.
+2026-07-22 12:25:55,563 INFO ETL complete. DataFrame shape: (0, 4)
+
+2026-07-22 12:25:55,681 INFO Hotel data fetched successfully.
+2026-07-22 12:25:55,773 INFO Extracted 20 records.
+2026-07-22 12:25:55,775 INFO ETL complete. DataFrame shape: (20, 11)
+
+2026-07-22 12:25:55,812 INFO Fetching hotel data for Shillong...
+2026-07-22 12:25:56,226 INFO Hotel data fetched successfully.
+2026-07-22 12:25:56,249 INFO Extracted 5 records.
+2026-07-22 12:25:56,250 INFO ETL complete. DataFrame shape: (5, 11)
+
+2026-07-23 09:32:12,265 INFO Fetching hotel data for Coorg...
+2026-07-23 09:32:12,269 INFO Fetching hotel data for Shillong...
+2026-07-23 09:32:12,275 INFO Fetching hotel data for Ooty...
+2026-07-23 09:32:15,298 INFO Hotel data fetched successfully.
+2026-07-23 09:32:15,333 INFO Extracted 13 records.
+2026-07-23 09:32:15,334 INFO ETL complete. DataFrame shape: (13, 11)
+
+2026-07-23 09:32:15,429 INFO Hotel data fetched successfully.
+2026-07-23 09:32:15,455 INFO Extracted 7 records.
+2026-07-23 09:32:15,456 INFO ETL complete. DataFrame shape: (7, 11)
+
+2026-07-23 09:32:15,739 INFO Hotel data fetched successfully.
+2026-07-23 09:32:15,751 INFO Extracted 0 records.
+2026-07-23 09:32:15,752 INFO ETL complete. DataFrame shape: (0, 4)
+
+2026-07-31 06:37:30,103 INFO Fetching hotel data for Sikkim...
+2026-07-31 06:37:33,297 INFO Hotel data fetched successfully.
+2026-07-31 06:37:33,398 INFO Extracted 20 records.
+2026-07-31 06:37:33,400 INFO ETL complete. DataFrame shape: (20, 11)
+
+2026-07-31 06:42:47,637 INFO Fetching hotel data for Sikkim...
+2026-07-31 06:42:48,402 INFO Hotel data fetched successfully.
+2026-07-31 06:42:48,426 INFO Extracted 20 records.
+2026-07-31 06:42:48,427 INFO ETL complete. DataFrame shape: (20, 11)
+
+2026-07-31 06:53:13,066 INFO Fetching hotel data for Munnar...
+2026-07-31 06:53:13,381 INFO Fetching hotel data for Manali...
+2026-07-31 06:53:14,076 INFO Fetching hotel data for Sikkim...
+2026-07-31 06:53:14,493 INFO Hotel data fetched successfully.
+2026-07-31 06:53:14,572 INFO Extracted 20 records.
+2026-07-31 06:53:14,574 INFO ETL complete. DataFrame shape: (20, 11)
+
+2026-07-31 06:53:15,574 INFO Hotel data fetched successfully.
+2026-07-31 06:53:15,615 INFO Extracted 10 records.
+2026-07-31 06:53:15,617 INFO ETL complete. DataFrame shape: (10, 11)
+
+2026-07-31 06:53:15,933 INFO Hotel data fetched successfully.
+2026-07-31 06:53:15,984 INFO Extracted 10 records.
+2026-07-31 06:53:15,986 INFO ETL complete. DataFrame shape: (10, 11)
+

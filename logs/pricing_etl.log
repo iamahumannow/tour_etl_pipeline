@@ -46,3 +46,51 @@
 2026-07-02 08:15:01,980 WARNING No flight data available for 2027-02-02
 2026-07-02 08:15:13,365 ERROR Error fetching flight data: 'price_insights'
 2026-07-02 08:15:13,369 WARNING No flight data available for 2027-03-02
+2026-07-21 10:28:57,899 ERROR Error fetching flight data: 'price_insights'
+2026-07-21 10:28:57,905 WARNING No flight data available for 2026-07-21
+2026-07-21 10:29:15,533 ERROR Error fetching flight data: 'price_insights'
+2026-07-21 10:29:15,537 WARNING No flight data available for 2026-09-21
+2026-07-21 10:29:21,193 ERROR Error fetching flight data: 'price_insights'
+2026-07-21 10:29:21,197 WARNING No flight data available for 2026-11-21
+2026-07-21 10:29:28,715 ERROR Error fetching flight data: 'price_insights'
+2026-07-21 10:29:28,717 WARNING No flight data available for 2026-12-21
+2026-07-21 10:29:32,995 ERROR Error fetching flight data: 'price_insights'
+2026-07-21 10:29:32,997 WARNING No flight data available for 2027-01-21
+2026-07-21 10:29:36,039 ERROR Error fetching flight data: 'price_insights'
+2026-07-21 10:29:36,041 WARNING No flight data available for 2027-02-21
+2026-07-21 10:29:43,621 ERROR Error fetching flight data: 'price_insights'
+2026-07-21 10:29:43,624 WARNING No flight data available for 2027-02-21
+2026-07-22 12:00:17,700 ERROR Error fetching flight data: 'price_insights'
+2026-07-22 12:00:17,707 WARNING No flight data available for 2026-07-22
+2026-07-22 12:25:55,402 ERROR Error fetching flight data: 'price_insights'
+2026-07-22 12:25:55,409 WARNING No flight data available for 2026-07-22
+2026-07-31 06:37:37,507 ERROR Error fetching flight data: 'price_insights'
+2026-07-31 06:37:37,509 WARNING No flight data available for 2026-07-31
+2026-07-31 06:37:51,947 ERROR Error fetching flight data: 'price_insights'
+2026-07-31 06:37:51,949 WARNING No flight data available for 2027-01-31
+2026-07-31 06:37:55,051 ERROR Error fetching flight data: 'price_insights'
+2026-07-31 06:37:55,053 WARNING No flight data available for 2027-02-28
+2026-07-31 06:38:26,064 ERROR Error fetching flight data: 'price_insights'
+2026-07-31 06:38:26,067 WARNING No flight data available for 2026-07-31
+2026-07-31 06:38:29,053 ERROR Error fetching flight data: 'price_insights'
+2026-07-31 06:38:29,055 WARNING No flight data available for 2027-01-31
+2026-07-31 06:38:29,740 ERROR Error fetching flight data: 'price_insights'
+2026-07-31 06:38:29,743 WARNING No flight data available for 2027-02-28
+2026-07-31 06:42:48,077 ERROR Error fetching flight data: 'price_insights'
+2026-07-31 06:42:48,080 WARNING No flight data available for 2026-07-31
+2026-07-31 06:42:50,641 ERROR Error fetching flight data: 'price_insights'
+2026-07-31 06:42:50,643 WARNING No flight data available for 2027-01-31
+2026-07-31 06:42:51,192 ERROR Error fetching flight data: 'price_insights'
+2026-07-31 06:42:51,196 WARNING No flight data available for 2027-02-28
+2026-07-31 06:53:17,880 ERROR Error fetching flight data: 'price_insights'
+2026-07-31 06:53:17,885 WARNING No flight data available for 2026-07-31
+2026-07-31 06:53:21,947 ERROR Error fetching flight data: 'price_insights'
+2026-07-31 06:53:21,949 WARNING No flight data available for 2027-01-31
+2026-07-31 06:53:22,398 ERROR Error fetching flight data: 'price_insights'
+2026-07-31 06:53:22,401 WARNING No flight data available for 2027-02-28
+2026-07-31 06:53:36,672 ERROR Error fetching flight data: 'price_insights'
+2026-07-31 06:53:36,674 WARNING No flight data available for 2026-11-30
+2026-07-31 06:53:56,430 ERROR Error fetching flight data: 'price_insights'
+2026-07-31 06:53:56,432 WARNING No flight data available for 2027-01-31
+2026-07-31 06:54:00,563 ERROR Error fetching flight data: 'price_insights'
+2026-07-31 06:54:00,566 WARNING No flight data available for 2027-02-28

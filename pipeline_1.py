@@ -14,7 +14,7 @@ start_date = '2026-11-28'
 end_date = '2026-12-03'
 dept_id = 'BOM'
 
-destinations = {'Sikkim':'IXB','Manali':'IXC','Munnar':'COK'}
+destinations = {'Ooty':'CJB','Shillong':'GAU','Coorg':'BLR'}
 
 def run():
     logging.info("Pipeline started.")

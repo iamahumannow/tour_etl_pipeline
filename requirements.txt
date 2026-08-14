@@ -1,0 +1,9 @@
+requests
+pandas
+sqlalchemy
+snowflake-sqlalchemy
+cryptography
+apache-airflow
+dbt-snowflake
+python-dotenv
+pymysql

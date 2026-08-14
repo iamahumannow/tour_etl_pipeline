@@ -14,12 +14,6 @@ logging = get_logger("mysql_to_snowflake", "mysql_to_snowflake.log")
 load_dotenv()
 
 TABLES = [
-    "weather",
-    "monthly_weather",
-    "flight",
-    "monthly_flight",
-    "hotel",
-    "monthly_hotel",
     "hist_flight"
 ]
 
@@ -89,7 +83,7 @@ def migrate_table(table: str, mysql_engine, sf_engine):
         df.to_sql(
             name=table.lower(),
             con=sf_engine,
-            if_exists="replace",   
+            if_exists="append",   
             index=False,
             chunksize=1000,       
         )

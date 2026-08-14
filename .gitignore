@@ -9,3 +9,7 @@ __pycache__/
 *.pyc
 
 to_do.txt
+dbt_build_dag.py
+notes/
+results/
+mysql_to_snowflake.py
